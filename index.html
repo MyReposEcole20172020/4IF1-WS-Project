@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-</head>
+    <script src="javascript/main.js"></script>
   </head>
   <body>
     <div class="s01">
@@ -45,36 +45,6 @@
 
       </form>
     </div>
-    <script type="text/javascript">
-      $("document").ready(function() {
-        $("#second").hide();
-        $("#result").css("color","white");
-      });
-
-      $(".btn-search").click(function(){
-        $("#first").hide();
-        $("#second").show();
-      });
-
-      $(".btn-back").click(function(){
-        $("#first").show();
-        $("#second").hide();
-      });
-
-      $("#search").keyup(function() {
-        var value = $(this).val();
-      });
-   
-      var query = 'SELECT DISTINCT ?pays WHERE {?pays dbp:populationCensus ?population}';
-      var newquery = encodeURIComponent(query);
-      var url = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ query +'&output=json';
-      $.getJSON(url+"&callback=?", function(resultats) {
-        $(resultats.results.bindings).each(function(i) {
-          $('#result').append("<p>" + resultats.results.bindings[i].pays.value + "</p>");
-        });
-      });
-
-    </script>
   </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
 
