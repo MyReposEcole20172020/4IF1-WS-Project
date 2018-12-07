@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+  </head>
+  <body>
+    <div class="s01">
+      <form>
+        <fieldset>
+          <legend>Fantastic Creatures</legend>
+        </fieldset>
+
+        <div class="inner-form" id="first">
+          <div class="input-field first-wrap">
+            <input id="search" type="text" placeholder="Insert the name of the fantastic creature you know." />
+          </div>
+          <div class="input-field third-wrap">
+            <button class="btn-search" type="button">Search</button>
+          </div>
+        </div>
+
+        <div id="second">
+            <div class="inner-form">
+              <div class="input-field third-wrap">
+                <button class="btn-back" type="button">Return to research</button>
+              </div>
+            </div>
+        
+            <div class="inner-form">
+              <div class="input-field first-wrap">
+                <div id="result"></div>
+              </div>
+            </div>
+        </div>
+
+      </form>
+    </div>
+    <script type="text/javascript">
+      $("document").ready(function() {
+        $("#second").hide();
+        $("#result").css("color","white");
+      });
+
+      $(".btn-search").click(function(){
+        $("#first").hide();
+        $("#second").show();
+      });
+
+      $(".btn-back").click(function(){
+        $("#first").show();
+        $("#second").hide();
+      });
+
+      $("#search").keyup(function() {
+        var value = $(this).val();
+      });
+   
+      var query = 'SELECT DISTINCT ?pays WHERE {?pays dbp:populationCensus ?population}';
+      var newquery = encodeURIComponent(query);
+      var url = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ query +'&output=json';
+      $.getJSON(url+"&callback=?", function(resultats) {
+        $(resultats.results.bindings).each(function(i) {
+          $('#result').append("<p>" + resultats.results.bindings[i].pays.value + "</p>");
+        });
+      });
+
+    </script>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+<!-- http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=SELECT DISTINCT ?pays WHERE {?pays dbp:populationCensus ?c}&output=json -->
