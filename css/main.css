@@ -542,7 +542,7 @@ body {
 
 .s01 form[type="result"] fieldset div[content="buttons"].inner-form {
   background: rgba(0, 0, 0, 0.8);
-  padding: 25px 25px 0px 25px;
+  padding: 47px 47px 0px 47px;
   display: inline-block;
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -632,11 +632,13 @@ body {
 .s01 form .inner-form .input-field.third-wrap .btn-back {
   height: 100%;
   width: 100%;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 10px;
   display: inline-block;
   background: #4272d7;
   white-space: nowrap;
   border-radius: .5px;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   transition: all .2s ease-out, color .2s ease-out;
   border: 0;
