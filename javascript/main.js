@@ -1,16 +1,5 @@
 $("document").ready(function() {
-    $("#second").hide();
     $("#result").css("color","white");
-  });
-
-  $(".btn-search").click(function(){
-    $("#first").hide();
-    $("#second").show();
-  });
-
-  $(".btn-back").click(function(){
-    $("#first").show();
-    $("#second").hide();
   });
 
   $("#search").keyup(function() {
@@ -28,10 +17,10 @@ $("document").ready(function() {
 
 function goToResults() {
   var url = "results.html";
-  window.location(url);
+  document.location.href = url;
 }
 
 function goToIndex() {
   var url = "index.html";
-  window.location(url);
+  document.location.href = url;
 }
