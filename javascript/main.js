@@ -23,5 +23,15 @@ $("document").ready(function() {
   $.getJSON(url+"&callback=?", function(resultats) {
     $(resultats.results.bindings).each(function(i) {
       $('#result').append("<p>" + resultats.results.bindings[i].pays.value + "</p>");
-    });
+    }); 
   });
+
+function goToResults() {
+  var url = "results.html";
+  window.location(url);
+}
+
+function goToIndex() {
+  var url = "index.html";
+  window.location(url);
+}
