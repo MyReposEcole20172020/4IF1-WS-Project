@@ -14,19 +14,22 @@
   </head>
   <body>
     <div class="s01">
-      <form>
+      <form type="result">
         <fieldset>
-          <legend>Fantastic Creatures</legend>
+          <div id="title"><legend type="result">Fantastic Creatures</legend></div>
+          <div class="inner-form" content="buttons">
+              <div class="input-field third-wrap" type="result">
+              <button class="btn-back" type="button" onClick="goToIndex()">Return to research</button>
+              </div>
+              <div class="input-field third-wrap" type="result">
+                  <button class="btn-back" type="button" onClick="goToMap()">Go to map</button>
+              </div>
+          </div>
         </fieldset>
-        <div class="inner-form">
-            <div class="input-field third-wrap">
-            <button class="btn-back" type="button" onClick="goToIndex()">Return to research</button>
-            </div>
-        </div>
-    
-        <div class="inner-form">
-            <div class="input-field first-wrap">
-            <div id="result"></div>
+
+        <div class="inner-form" type="result">
+            <div class="result-field first-wrap">
+              <div id="result"></div>
             </div>
         </div>
       </form>

@@ -2,9 +2,9 @@
 html {
   line-height: 1.15;
   /* 1 */
-  -ms-text-size-adjust: 100%;
+  /*-ms-text-size-adjust: 100%;
   /* 2 */
-  -webkit-text-size-adjust: 100%;
+  /*-webkit-text-size-adjust: 100%;
   /* 2 */
 }
 
@@ -304,7 +304,7 @@ legend {
   /* 1 */
   color: inherit;
   /* 2 */
-  display: table;
+  display: inline-flex;
   /* 1 */
   max-width: 100%;
   /* 1 */
@@ -427,9 +427,18 @@ template {
 
 html {
   height: 100%;
+  display: block;
+  box-sizing: border-box;
 }
 
 fieldset {
+  display: -ms-flexbox;
+  display: inline-block;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   margin: 0;
   padding: 0;
   -webkit-margin-start: 0;
@@ -444,13 +453,18 @@ fieldset {
 legend {
   margin: 0;
   padding: 0;
-  display: block;
+  display: inline-block;
   -webkit-padding-start: 0;
   -webkit-padding-end: 0;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  height: 100%;
 }
 
 .s01 {
@@ -465,12 +479,21 @@ legend {
   background: url("../images/background-dragon.jpg");
   background-size: cover;
   background-position: center center;
+  box-sizing: border-box;
   padding: 15px;
 }
 
 .s01 form {
   width: 100%;
   max-width: 1290px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.s01 form[type="result"] {
+  width: 100%;
+  max-width: 1500px;
+  display: inline-block;
 }
 
 .s01 form legend {
@@ -480,11 +503,25 @@ legend {
   margin-bottom: 60px;
 }
 
+.s01 form #title {
+  display: inline-block;
+}
+
+.s01 form div legend[type="result"] {
+  display: inline-block;
+  font-size: 60px;
+  line-height: 1;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
 .s01 form .inner-form {
   background: rgba(0, 0, 0, 0.5);
   padding: 50px 47px;
   display: -ms-flexbox;
   display: flex;
+  box-sizing: border-box;
   width: 100%;
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -492,9 +529,40 @@ legend {
       align-items: center;
 }
 
+.s01 form div[type="result"].inner-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 47px 50px 47px;
+    display: -ms-flexbox;
+    display: inline-block;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+.s01 form[type="result"] fieldset div[content="buttons"].inner-form {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 25px 25px 0px 25px;
+  display: inline-block;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.s01 form[type="result"] fieldset div[content="buttons"].inner-form div[type="result"] {
+  display: inline-block;
+}
+
 .s01 form .inner-form .input-field {
   margin-right: 30px;
   height: 68px;
+}
+
+.s01 form .inner-form .result-field {
+  margin-right: 30px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .s01 form .inner-form .input-field input {
@@ -541,6 +609,7 @@ legend {
 .s01 form .inner-form .input-field.third-wrap {
   width: 180px;
   margin-right: 0;
+  display: inline-block;
 }
 
 .s01 form .inner-form .input-field.third-wrap .btn-search {
@@ -563,6 +632,7 @@ legend {
 .s01 form .inner-form .input-field.third-wrap .btn-back {
   height: 100%;
   width: 100%;
+  display: inline-block;
   background: #4272d7;
   white-space: nowrap;
   border-radius: .5px;
@@ -622,4 +692,9 @@ legend {
   .s01 form .inner-form .input-field.third-wrap .btn-search {
     font-size: 16px;
   }
+}
+
+p {
+  display : block;
+  box-sizing: border-box;
 }
