@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<creatures>
+<creature  id="1">
+	<name>Fairy</name>
+	<region>Europe</region>
+</creature>
+<creature  id="2">
+	<name>Preta</name>
+	<region>East, South and Southeast Asia</region>
+</creature>
+<creature  id="3">
+	<name>Succubus</name>
+	<region>Asia</region>
+    <region>Europe</region>
+    <region>Middle_East</region>
+    <region>The_Americas</region>
+</creature>
+<creature  id="4">
+	<name>Lich</name>
+</creature>
+</creatures>
