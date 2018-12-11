@@ -15,12 +15,24 @@ $("document").ready(function() {
   
   setAutocompleteOptions();
 
+  /* Get variable sent from index html */
+  var image = parent.document.URL.substring(parent.document.URL.indexOf('=')+1, parent.document.URL.length);
+  var imagequery = 'SELECT DISTINCT ?image WHERE {dbr:Vampire foaf:depiction ?image.}';
+    imagequery = encodeURIComponent(imagequery);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ imagequery +'&output=json';
+    $.getJSON(myurl+"&callback=?", function(resultats) {
+    $(resultats.results.bindings).each(function(i) {
+    var imagesrc = resultats.results.bindings[i].image.value;
+  $("#result").append('<img src="'+ image +'">');
+  });
   });
 
-/* Search value */
+});
 
+/* Search value */
+var value;
 $("#search").keyup(function() {
-  var value = $(this).val();
+  value = $(this).val();
 });
 
 /* Query */
@@ -30,16 +42,31 @@ var newquery = encodeURIComponent(query);
 var url = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ newquery +'&output=json';
 $.getJSON(url+"&callback=?", function(resultats) {
   $(resultats.results.bindings).each(function(i) {
-    $('#result').append("<p>" + resultats.results.bindings[i].pays.value + "</p>");
+    var item = resultats.results.bindings[i].pays.value;
+    item = item.substring(item.lastIndexOf('/') + 1);
+    $('#result').append("<p>" + item + "</p>");
+    
   });
 });
+
+/*
+var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+      $.getJSON(flickerAPI, {
+          tags: "mount everest",
+          tagmode: "any",
+          format: "json"
+      }, function (data) {
+          alert("success");
+      });
+      return false;*/
 
 /* Redirecting */
 
 function goToResults() {
-  var url = "results.html";
-  document.location.href = url;
+    var url='results.html?myVariable='+value;
+    document.location.href = url;
 }
+
 function goToIndex() {
   var url = "index.html";
   document.location.href = url;
@@ -57,41 +84,52 @@ function displayTable() {
 
 /* Retrieving data from XML file */
 
+/*
+var url = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ newquery +'&output=xml&callback=?';
 function getXmlFromFile() {
   $.ajax({
     type: "GET",
     crossDomain: true,
-    url: "data/data.xml",
+    url: url,
     datatype: "xml",
-    success: setAutocompleteOptions,
+    success: createXmlFile,
     error: loadfail});
-  }
+}
+
+function createXmlFile(data){
+  $(data).find('uri').each(function(){
+    var uri = $(this).find('uri').text();
+    autocompleteOptions.push(uri);
+  });
+}*/
    
-/*
-function setAutocompleteOptions(data) {
+/*function setAutocompleteOptions(data) {
   $(data).find('creature').each(function(){
     var id = $(this).attr('id');
     var name = $(this).find('name').text();
     autocompleteOptions.push(name);
   });
-}
-
-function loadfail(data) {
-  alert("error");
 }*/
 
 function readXML(){
   var mYxmlObject = new XMLHttpRequest();
-  mYxmlObject.open("GET", "data/data.xml", false);
+  mYxmlObject.open("GET", "data/creatures.xml", false);
   mYxmlObject.send(null);
   return mYxmlObject.responseXML;
 }
 
-function setAutocompleteOptions(data) {
+function setAutocompleteOptions() {
   var data = readXML();
-  $(data).find('creature').each(function(){
-    var id = $(this).attr('id');
-    var name = $(this).find('name').text();
+  $(data).find('uri').each(function(){
+    var text = $(this).text();
+    var name = text.substring(text.lastIndexOf('/') + 1);
+    if(name.indexOf('(') != -1) {
+      name = name.substring(0,name.indexOf('('));
+    }
+    if(name.lastIndexOf('_') == (name.length-1)) {
+      name = name.substring(0,name.lastIndexOf('_'));
+    }
+    name = name.replace(/_/g,' ');
     autocompleteOptions.push(name);
   });
 }
