@@ -1,6 +1,9 @@
 /* Initialize */
 
 var autocompleteOptions = [];
+var mapping = [];
+
+var data;
 
 $("document").ready(function() {
     
@@ -17,14 +20,21 @@ $("document").ready(function() {
 
   /* Get variable sent from index html */
   var image = parent.document.URL.substring(parent.document.URL.indexOf('=')+1, parent.document.URL.length);
-  var imagequery = 'SELECT DISTINCT ?image WHERE {dbr:Vampire foaf:depiction ?image.}';
-    imagequery = encodeURIComponent(imagequery);
+  image = image.replace(/%20/g,' ');
+  var imagequery = findURI(mapping,image);
+  imagequery = 'SELECT DISTINCT ?image WHERE {<' + imagequery + '> foaf:depiction ?image.}';
+  console.log(imagequery);
+  imagequery = encodeURIComponent(imagequery);
     var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ imagequery +'&output=json';
     $.getJSON(myurl+"&callback=?", function(resultats) {
-    $(resultats.results.bindings).each(function(i) {
-    var imagesrc = resultats.results.bindings[i].image.value;
-  $("#result").append('<img src="'+ image +'">');
-  });
+    if(resultats.results.bindings.length == 0 ){
+      $("#result").append('<p>Image not found</p>');    
+    } else {
+      $(resultats.results.bindings).each(function(i) {
+        var imagesrc = resultats.results.bindings[i].image.value;
+        $("#result").append('<img src="'+ imagesrc +'">');
+      });
+    }
   });
 
 });
@@ -37,7 +47,7 @@ $("#search").keyup(function() {
 
 /* Query */
 
-var query = 'SELECT DISTINCT ?pays WHERE {?pays dbp:populationCensus ?population}';
+/*var query = 'SELECT DISTINCT ?pays WHERE {?pays dbp:populationCensus ?population}';
 var newquery = encodeURIComponent(query);
 var url = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ newquery +'&output=json';
 $.getJSON(url+"&callback=?", function(resultats) {
@@ -47,7 +57,7 @@ $.getJSON(url+"&callback=?", function(resultats) {
     $('#result').append("<p>" + item + "</p>");
     
   });
-});
+});*/
 
 /*
 var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
@@ -120,8 +130,9 @@ function readXML(){
 
 function setAutocompleteOptions() {
   var data = readXML();
-  $(data).find('uri').each(function(){
+  $(data).find('uri').each(function(i){
     var text = $(this).text();
+    $('this').attr('id', i);
     var name = text.substring(text.lastIndexOf('/') + 1);
     if(name.indexOf('(') != -1) {
       name = name.substring(0,name.indexOf('('));
@@ -130,6 +141,19 @@ function setAutocompleteOptions() {
       name = name.substring(0,name.lastIndexOf('_'));
     }
     name = name.replace(/_/g,' ');
+
+    var object = { 'key' : name, 'uri' : text };
+
     autocompleteOptions.push(name);
+    mapping.push(object);
+
   });
+}
+
+function findURI(mapping, value){
+  for (var i in mapping){
+    if(mapping[i].key == value){
+      return mapping[i].uri;
+    }
+  }
 }
