@@ -12,7 +12,9 @@ $("document").ready(function() {
 
   $( function() {   
     $( "#search" ).autocomplete({
-      source: autocompleteOptions
+      source: autocompleteOptions,
+      select: function (event, ui) {
+        autoCompleteSelectHandler(event, ui)}
     });
   });
   
@@ -23,7 +25,7 @@ $("document").ready(function() {
   image = image.replace(/%20/g,' ');
   var imagequery = findURI(mapping,image);
   imagequery = 'SELECT DISTINCT ?image WHERE {<' + imagequery + '> foaf:depiction ?image.}';
-  console.log(imagequery);
+  console.log("\n\n\n" +imagequery + "\n\n\n");
   imagequery = encodeURIComponent(imagequery);
     var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query='+ imagequery +'&output=json';
     $.getJSON(myurl+"&callback=?", function(resultats) {
@@ -37,13 +39,26 @@ $("document").ready(function() {
     }
   });
 
+  $('#search').keypress(function(e){
+    if(e.keyCode==13){
+      e.preventDefault();
+      $(".btn-search").click();
+    }
+  });
+
 });
+
+
 
 /* Search value */
 var value;
 $("#search").keyup(function() {
   value = $(this).val();
 });
+
+function autoCompleteSelectHandler(event, ui) {               
+  value = ui.item.value;
+}
 
 /* Query */
 
@@ -73,8 +88,13 @@ var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncal
 /* Redirecting */
 
 function goToResults() {
-    var url='results.html?myVariable='+value;
-    document.location.href = url;
+    if(findURI(mapping, value) == 0){
+      $("#search").val('');
+      $("#search").attr("placeholder","You must enter a valid name of a creature");
+    } else {
+      var url='results.html?myVariable='+value;
+      document.location.href = url;
+    }
 }
 
 function goToIndex() {
@@ -156,4 +176,5 @@ function findURI(mapping, value){
       return mapping[i].uri;
     }
   }
+  return 0;
 }
