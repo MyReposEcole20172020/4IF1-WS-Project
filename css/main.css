@@ -700,3 +700,31 @@ p {
   display : block;
   box-sizing: border-box;
 }
+
+.ui-autocomplete{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background: #fff;
+}
+
+.ui-autocomplete{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background: #fff;
+  max-height: 200px;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+}
+
+.ui-menu-item{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  height: 35px;
+}
+
+.ui-menu-item.ui-state-focus{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+

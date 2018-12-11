@@ -1,0 +1,78 @@
+PREFIX purl:<http://purl.org/linguistics/gold/>
+
+select DISTINCT ?b where{
+{?b dbp:grouping dbr:Legendary_creature} MINUS{
+{?b dct:subject dbc:Supernatural_legends .
+?b a dbo:FictionalCharacter}
+UNION
+{?b dct:subject dbc:Wolves_in_Norse_mythology}
+UNION
+{?c dbp:grouping dbr:Legendary_creature.
+?c dbp:similarCreatures ?b }
+UNION
+{?c dct:subject dbc:Supernatural_legends .
+?c a dbo:FictionalCharacter.
+?b dbp:similarCreatures ?c }
+UNION
+{?b dct:subject dbc:Greek_legendary_creatures}
+UNION
+{?b dct:subject dbc:Monsters}
+UNION
+{?b dct:subject dbc:Albanian_mythology}
+UNION
+{?b dct:subject dbc:African_legendary_creatures}
+UNION
+{?b dct:subject dbc:Female_legendary_creatures}
+UNION
+{?b dct:subject dbc:Heraldic_beasts}
+UNION
+{?b dct:subject dbc:Chinese_legendary_creatures}
+UNION
+{?b dct:subject dbc:Dragons}
+UNION
+{?b dct:subject dbc:Asian_legendary_creatures}
+UNION
+{?b dct:subject dbc:Irish_legendary_creatures}
+UNION
+{?b dct:subject dbc:Fairies}
+UNION
+{?b dct:subject dbc:Medieval_European_legendary_creatures}
+UNION
+{?b dct:subject dbc:Horses_in_Norse_mythology}
+UNION
+{?b a yago:WikicatCreaturesInNorseMythology}
+UNION
+{?b dct:subject dbc:Japanese_legendary_creatures.
+?b a dbo:FictionalCharacter}
+UNION
+{?b dct:subject dbc:Mythological_hybrids}
+UNION
+{?b dct:subject dbc:Egyptian_legendary_creatures}
+UNION
+{?b dct:subject dbc:Slavic_legendary_creatures.}
+UNION
+{?b dct:subject dbc:Mythological_dogs}
+UNION
+{?b dct:subject dbc:South_American_legendary_creatures}
+}MINUS {?b purl:hypernym dbr:List}.
+MINUS{?b dct:subject dbc:National_flags}.
+MINUS{?b dct:subject dbc:Flags_of_China}.
+MINUS{?b a dbo:WrittenWork}.
+MINUS {?b dct:subject dbc:Superstitions_of_Russia}.
+MINUS{?b owl:sameAs dbr:Horses_of_the_Æsir}.
+MINUS{?b dct:subject dbc:Lists_of_legendary_creatures}.
+MINUS{?b dct:subject dbc:Astrological_signs}.
+FILTER(ISURI(?b)).
+FILTER NOT EXISTS{ wikipedia-en:Supernatural_beings_in_Slavic_folklore foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Vampire_folklore_by_region foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Index_of_Egyptian_mythology_articles foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Dogs_in_religion foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Dog_in_Chinese_mythology foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Dogs_in_Mesoamerican_folklore_and_myth foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:List_of_The_Asylum_monsters foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Culture_of_Albania foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Albanian_Songs_of_the_Frontier_Warriors foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Albanian_folk_poetry foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Cultural_depictions_of_Medusa_and_Gorgons foaf:primaryTopic ?b}.
+FILTER NOT EXISTS{ wikipedia-en:Serpent_(symbolism) foaf:primaryTopic ?b}
+}
