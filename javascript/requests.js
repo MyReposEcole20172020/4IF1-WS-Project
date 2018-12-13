@@ -91,6 +91,52 @@ function insertGroup(subject) {
     });
 }
 
+function insertComment(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#comment').append('<span>Comment not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#comment").append("<text>" + result + "<br /><text>");
+            });
+        }
+
+    });
+}
+
+function insertComment(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#comment').append('<span>Comment not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#comment").append("<text>" + result + "<br /><text>");
+            });
+        }
+
+    });
+}
+
 function findURI2(map, value) {
     for (var i in map) {
         if (map[i].key == value) {

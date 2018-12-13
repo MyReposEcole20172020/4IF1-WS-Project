@@ -22,3 +22,13 @@ item {
     font-size: 15px;
     color: lightblue;
 }
+
+#comment{
+    text-align: justify;
+    text-justify: inter-word;
+}
+text {
+    position: relative;
+    font-size: 15px;
+    color: rgb(171, 196, 235);
+}
