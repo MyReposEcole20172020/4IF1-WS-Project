@@ -10,3 +10,15 @@ table {
 td {
     text-align: center;
 }
+
+span {
+    position: relative;
+    font-size: 12px;
+    color: orange;
+}
+
+item {
+    position: relative;
+    font-size: 15px;
+    color: lightblue;
+}
