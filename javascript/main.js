@@ -11,6 +11,7 @@ $("document").ready(function() {
   $( function() {   
     $( "#search" ).autocomplete({
       source: autocompleteOptions,
+      minLength: 2,
       select: function (event, ui) {
         autoCompleteSelectHandler(event, ui)}
     });

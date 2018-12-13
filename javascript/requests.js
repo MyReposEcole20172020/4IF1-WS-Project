@@ -2,6 +2,7 @@
 var map = [];
 
 var val = parent.document.URL.substring(parent.document.URL.indexOf('=') + 1, parent.document.URL.length); //Get variable in URL
+val = decodeURI(val);
 val = val.replace(/%20/g, ' '); // Replace %20 strings with white spaces
 
 $("document").ready(function () {
@@ -131,6 +132,194 @@ function insertComment(subject) {
                 result = result.substring(result.lastIndexOf('/') + 1);
                 result = result.replace(/_/g, ' ');
                 $("#comment").append("<text>" + result + "<br /><text>");
+            });
+        }
+
+    });
+}
+
+function insertGender(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'foaf:gender' + ' ?out.}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#gender').append('<span>Gender not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#gender").append("<item>" + result + "<br /><item>");
+            });
+        }
+
+    });
+}
+
+function insertBasedOn(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {{<' + subject + '> ' + 'dbp:basedOn' + ' ?out.} UNION '
+                                           +'{<' + subject + '> dbo:basedOn ?out.}  UNION '
+                                           +'{<' + subject + '> dbp:based ?out.}}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#basedOn').append('<span>Based on not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#basedOn").append("<item>" + result + "<br /><item>");
+            });
+        }
+
+    });
+}
+
+function insertFirstAppearance(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbo:firstAppearance' + ' ?out.}'
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#firstAppearance').append('<span>First appearance not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#firstAppearance").append("<item>" + result + "<br /><item>");
+            });
+        }
+
+    });
+}
+
+function insertCountry(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:country' + ' ?out.}'
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#country').append('<span>Country not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#country").append("<item>" + result + "<br /><item>");
+            });
+        }
+
+    });
+}
+
+function insertRegion(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:region' + ' ?out.}'
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#region').append('<span>Region not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#region").append("<item>" + result + "<br /><item>");
+            });
+        }
+
+    });
+}
+
+function insertHabitat(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:habit' + ' ?out.}'
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#habitat').append('<span>Habitat not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#habitat").append("<item>" + result + "<br /><item>");
+            });
+        }
+
+    });
+}
+
+function insertMythology(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:mythology' + ' ?out.}'
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#mythology').append('<span>Mythology not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#mythology").append("<item>" + result + "<br /><item>");
+            });
+        }
+
+    });
+}
+
+function insertSimilarCreatures(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {{<' + subject + '> ' + 'dbp:similarCreatures' + ' ?out.} UNION '
+                                            +'{?out dbp:similarCreatures <' + subject + '>}}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#similarCreatures').append('<span>Similar creatures not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                console.log(result);
+                result = result.substring(result.lastIndexOf('/') + 1);
+                result = result.replace(/_/g, ' ');
+                $("#similarCreatures").append("<item>" + result + "<br /><item>");
             });
         }
 
