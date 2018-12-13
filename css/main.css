@@ -609,7 +609,13 @@ body {
 .s01 form .inner-form .input-field.third-wrap {
   width: 180px;
   margin-right: 0;
+  min-width: 200px;
+  margin: 0px 0px 8px 0px;
   display: inline-block;
+}
+
+.s01 form .inner-form .input-field.third-wrap.search {
+  min-width: 120px;
 }
 
 .s01 form .inner-form .input-field.third-wrap .btn-search {
@@ -657,6 +663,7 @@ body {
   }
   .s01 form .inner-form {
     padding: 30px 35px;
+    min-width: 300px;
   }
   .s01 form .inner-form .input-field {
     height: 50px;

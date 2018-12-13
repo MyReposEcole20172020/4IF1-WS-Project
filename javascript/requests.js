@@ -7,6 +7,7 @@ val = val.replace(/%20/g, ' '); // Replace %20 strings with white spaces
 
 $("document").ready(function () {
 
+    $("#name").append(" : " + val);
     fillMapping();
     var inputURI = findURI2(map, val);
 
@@ -35,11 +36,12 @@ function insertImage(subject) {
     $.getJSON(myurl + "&callback=?", function(resultats) {
 
         if(resultats.results.bindings.length == 0 ) {
-            $('#image').append('<span>Image not found</span>'); 
+            $('#image').prev().remove();
+            //$('#image').append('<span>Image not found</span>'); 
         } else {
             $(resultats.results.bindings).each( function(i) {
                 var result = resultats.results.bindings[i].out.value;
-                $("#image").append("<img src='" + result + "' />");
+                $("#image").append('<img src="' + result + '" />');
           });
         }
         
@@ -56,7 +58,8 @@ function insertSubject(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#subject').append('<span>Subject not found</span>');
+            $('#subject').prev().remove();
+            //$('#subject').append('<span>Subject not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -79,7 +82,8 @@ function insertGroup(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#group').append('<span>Group not found</span>');
+            $('#group').prev().remove();
+            //$('#group').append('<span>Group not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -102,30 +106,8 @@ function insertComment(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#comment').append('<span>Comment not found</span>');
-        } else {
-            $(resultats.results.bindings).each(function (i) {
-                var result = resultats.results.bindings[i].out.value;
-                result = result.substring(result.lastIndexOf('/') + 1);
-                result = result.replace(/_/g, ' ');
-                $("#comment").append("<text>" + result + "<br /><text>");
-            });
-        }
-
-    });
-}
-
-function insertComment(subject) {
-
-    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
-    console.log("\n\n\n" + query + "\n\n\n");
-    query = encodeURIComponent(query);
-    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
-
-    $.getJSON(myurl + "&callback=?", function (resultats) {
-
-        if (resultats.results.bindings.length == 0) {
-            $('#comment').append('<span>Comment not found</span>');
+            $('#comment').prev().remove();
+            //$('#comment').append('<span>Comment not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -148,7 +130,8 @@ function insertGender(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#gender').append('<span>Gender not found</span>');
+            $('#gender').prev().remove();
+            //$('#gender').append('<span>Gender not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -173,7 +156,8 @@ function insertBasedOn(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#basedOn').append('<span>Based on not found</span>');
+            $('#basedOn').prev().remove();
+            //$('#basedOn').append('<span>Based on not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -196,7 +180,8 @@ function insertFirstAppearance(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#firstAppearance').append('<span>First appearance not found</span>');
+            $('#firstAppearance').prev().remove();
+            //$('#firstAppearance').append('<span>First appearance not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -219,7 +204,8 @@ function insertCountry(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#country').append('<span>Country not found</span>');
+            $('#country').prev().remove();
+            //$('#country').append('<span>Country not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -242,7 +228,8 @@ function insertRegion(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#region').append('<span>Region not found</span>');
+            $('#region').prev().remove();
+            //$('#region').append('<span>Region not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -265,7 +252,8 @@ function insertHabitat(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#habitat').append('<span>Habitat not found</span>');
+            $('#habitat').prev().remove();
+            //$('#habitat').append('<span>Habitat not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -288,7 +276,8 @@ function insertMythology(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#mythology').append('<span>Mythology not found</span>');
+            $('#mythology').prev().remove();
+            //$('#mythology').append('<span>Mythology not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
@@ -312,14 +301,16 @@ function insertSimilarCreatures(subject) {
     $.getJSON(myurl + "&callback=?", function (resultats) {
 
         if (resultats.results.bindings.length == 0) {
-            $('#similarCreatures').append('<span>Similar creatures not found</span>');
+            $('#similarCreatures').prev().remove();
+            //$('#similarCreatures').append('<span>Similar creatures not found</span>');
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
                 console.log(result);
-                result = result.substring(result.lastIndexOf('/') + 1);
-                result = result.replace(/_/g, ' ');
-                $("#similarCreatures").append("<item>" + result + "<br /><item>");
+                var label = result.substring(result.lastIndexOf('/') + 1);
+                label = label.replace(/_/g, ' ');
+                console.log(label);
+                $("#similarCreatures").append('<a href="' + result + '">' + label + '<br /></a>');
             });
         }
 
