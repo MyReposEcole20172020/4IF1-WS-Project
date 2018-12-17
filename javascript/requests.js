@@ -7,7 +7,7 @@ val = val.replace(/%20/g, ' '); // Replace %20 strings with white spaces
 
 $("document").ready(function () {
 
-    $("#name").append(" : " + val);
+    $("#name").append(val);
     fillMapping();
     var inputURI = findURI2(map, val);
 
@@ -63,6 +63,26 @@ function insertSubject(subject) {
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
+
+                var query2 = result.replace('Category:',''); 
+                query2 = 'SELECT DISTINCT ?out WHERE {<' + query2 + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+                
+                var myurl2 = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query2 + '&output=json';
+                $.getJSON(myurl2 + "&callback=?", function (resultats) {
+
+                    if (resultats.results.bindings.length == 0) {
+                        //$('#subject').append('<span>Subject not found</span>');
+                    } else {
+                        $(resultats.results.bindings).each(function (i) {
+                            var result = resultats.results.bindings[i].out.value;
+                            result = result.substring(result.lastIndexOf(':') + 1);
+                            result = result.replace(/_/g, ' ');
+                            $("#subject").append("<span>" + result + "<br /><span>");
+                        });
+                    }
+            
+                });
+
                 result = result.substring(result.lastIndexOf(':') + 1);
                 result = result.replace(/_/g, ' ');
                 $("#subject").append("<item>" + result + "<br /><item>");
@@ -111,7 +131,7 @@ function insertComment(subject) {
         } else {
             $(resultats.results.bindings).each(function (i) {
                 var result = resultats.results.bindings[i].out.value;
-                result = result.substring(result.lastIndexOf('/') + 1);
+                //result = result.substring(result.lastIndexOf('/') + 1);
                 result = result.replace(/_/g, ' ');
                 $("#comment").append("<text>" + result + "<br /><text>");
             });
@@ -146,9 +166,10 @@ function insertGender(subject) {
 
 function insertBasedOn(subject) {
 
-    var query = 'SELECT DISTINCT ?out WHERE {{<' + subject + '> ' + 'dbp:basedOn' + ' ?out.} UNION '
-                                           +'{<' + subject + '> dbo:basedOn ?out.}  UNION '
-                                           +'{<' + subject + '> dbp:based ?out.}}';
+    var query = 'SELECT DISTINCT ?out WHERE {{?out dbp:basedOn <' + subject + '>} UNION '
+                                           +'{?out dbo:basedOn <' + subject + '>}  UNION '
+                                           +'{<' + subject + '> dbp:based ?out.} UNION '
+                                           +'{?out dbp:based <' + subject + '>}}';
     console.log("\n\n\n" + query + "\n\n\n");
     query = encodeURIComponent(query);
     var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
@@ -308,9 +329,22 @@ function insertSimilarCreatures(subject) {
                 var result = resultats.results.bindings[i].out.value;
                 console.log(result);
                 var label = result.substring(result.lastIndexOf('/') + 1);
+                if(label.indexOf('(') != -1) {
+                    label = label.substring(0,label.indexOf('('));
+                  }
+                  if(label.lastIndexOf('_') == (label.length-1)) {
+                    label = label.substring(0,label.lastIndexOf('_'));
+                  }
                 label = label.replace(/_/g, ' ');
                 console.log(label);
-                $("#similarCreatures").append('<a href="' + result + '">' + label + '<br /></a>');
+                var myUrl =parent.document.URL.substring(0,parent.document.URL.lastIndexOf('=')+1); 
+                result = myUrl + label;
+                if(findURI2(map, label) == 0) {
+                    $("#similarCreatures").append('<a>' + label + '<br /></a>');
+                } else {
+                    $("#similarCreatures").append('<a href="' + result + '">' + label + '<br /></a>');
+                }
+                
             });
         }
 
@@ -330,15 +364,15 @@ function fillMapping() {
     var data = readXML();
     $(data).find('uri').each(function (i) {
         var uri = $(this).text();
-        var name = uri.substring(uri.lastIndexOf('/') + 1);
-        if (name.indexOf('(') != -1) {
-            name = name.substring(0, name.indexOf('('));
+        var label = uri.substring(uri.lastIndexOf('/') + 1);
+        if (label.indexOf('(') != -1) {
+            label = label.substring(0, label.indexOf('('));
         }
-        if (name.lastIndexOf('_') == (name.length - 1)) {
-            name = name.substring(0, name.lastIndexOf('_'));
+        if (label.lastIndexOf('_') == (label.length - 1)) {
+            label = label.substring(0, label.lastIndexOf('_'));
         }
-        name = name.replace(/_/g, ' ');
-        var object = { 'key': name, 'uri': uri };
+        label = label.replace(/_/g, ' ');
+        var object = { 'key': label, 'uri': uri };
         map.push(object);
     });
 }

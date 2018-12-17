@@ -64,7 +64,7 @@ function goToMap() {
 
 function readXML(){
   var mYxmlObject = new XMLHttpRequest();
-  mYxmlObject.open("GET", "data/creatures.xml", false);
+  mYxmlObject.open("GET", "data/TestSimilar.xml", false);
   mYxmlObject.send(null);
   return mYxmlObject.responseXML;
 }

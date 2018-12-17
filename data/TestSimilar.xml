@@ -1,0 +1,3211 @@
+<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
+ <head>
+  <variable name="name"/>
+ </head>
+ <results distinct="false" ordered="true">
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Siren_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lady_of_the_Lake</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Black_dog_(ghost)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Green_Knight</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Iara_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Morgan_le_Fay</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Buggane</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tennin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Golem</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jinn</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Merlin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Spring-heeled_Jack</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Questing_Beast</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Romãozinho</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Night_hag</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Krampus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tata_Duende</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Brownie_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mephistopheles</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Faust</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Grýla</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Witches_of_Benevento</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Headless_Horseman</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Oberon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Puck_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Saci_(Brazilian_folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Badalisc</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ghoul</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/La_Llorona</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Curupira</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Domovoi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wendigo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Headless_Mule</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Stingy_Jack</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Warg</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fenrir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Geri_and_Freki</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hati_Hróðvitnisson</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sköll</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/American_black_bear</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Garuda</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Magician_(paranormal)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Satyr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sea_serpent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Thunderbird_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Unicorn</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vampire</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Werewolf</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Montauk_Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Orang_Pendek</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pixie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Monkey-man_of_Delhi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Irizima</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Therianthropy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zombie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bigfoot</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Centaur</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Demon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Elf</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ghost</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Loch_Ness_Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Minotaur</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mokele-mbembe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nymph</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pegasus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Proteus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Succubus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Preta</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Neck_(water_spirit)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cockatrice</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Re&#39;em</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Camahueto</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Huldra</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Indrik</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Karkadann</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pamola</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rain_Bird_(legend)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shadhavar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Undine_(alchemy)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Giant_anaconda</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Naga_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sphinx</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Boggart</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yowie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dryad</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Empusa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Faun</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Harpy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hippogriff</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lernaean_Hydra</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mermaid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mormo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Phantom_cat</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yeti</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Simurgh</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Elephant_seal</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Skunk_ape</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Krasue</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sea_Serpent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bochica</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pakhangba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Incubus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nordic_aliens</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Phaya_Naga</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Phoenix_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rakshasa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sprite_(creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ogopogo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Selkie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leprechaun</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wyvern</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yōkai</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wolpertinger</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Brown-throated_sloth</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Penanggalan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Almas_(cryptozoology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Basilisk</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Griffin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Barmanou</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Champ_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mande_Barung</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Revenant</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sirrush</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Skunk_Ape</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kelpie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Qilin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cryptids</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Goranchacha</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Merman</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Elder_Thing</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yeren</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Eachy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Castalia</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Manticore</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Am_Fear_Liath_Mòr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ala_(demon)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Asura</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wight</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cat_sìth</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bukit_Timah_Monkey_Man</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kuman_Thong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Extraterrestrials_in_fiction</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leyak</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sylph</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hibagon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vengeful_ghost</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Plejaren</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Panama_Creature</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Baldanders</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Batutut</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bogle</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cretan_Bull</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cŵn_Annwn</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/European_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Naiad</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hungry_ghost</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shoggoth</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dhampir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nyai_Roro_Kidul</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Each-uisge</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lamia</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Roc_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nāga</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Huldufólk</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Many-finned_sea_serpent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mušḫuššu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Grootslang</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wewe_Gombel</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Phi_Tai_Hong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Popobawa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Idacansás</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jackalope</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lich</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nang_Tani</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bessie_(lake_monster)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hulder</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Half-elf</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Talking_tree</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Centaurides</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Honey_Island_Swamp_monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/White_River_Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sundel_bolong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lava_bear</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nang_Ta-khian</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Thomagata</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Silenus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Triton_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hellhound</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hekatonkheires</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gegenees</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Laestrygonians</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Winged_unicorn</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Agreus_and_Nomios</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Centaurus_(Greek_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Napaeae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Parthenope_(Siren)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Astomi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sybaris_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kallikantzaros</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amphisbaena</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cerberus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Charybdis</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Erinyes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nereid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Scylla</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pygmy_(Greek_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Eurynomos</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hippalectryon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hippocampus_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Crommyonian_Sow</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Stymphalian_birds</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Taraxippus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Thelxinoë</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leimakid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lampad</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Onocentaur</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Giants_(Greek_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aloadae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ampelos</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Calydonian_Boar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Campe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cercopes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ceryneian_Hind</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cetus_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Erymanthian_Boar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Euryale</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gorgon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Keres_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Maenad</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mares_of_Diomedes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Muse</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nemean_lion</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Oceanid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ocypete</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Oread</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Orthrus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Podarge</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Stheno</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Talos</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Anthropophage</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Odontotyrannos</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Maliades</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chimera_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cyclops</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dactyl_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Echidna_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Laelaps_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Medusa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Meliae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Titan_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Monopod_(creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dragons_in_Greek_mythology</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gello</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Eudaemon_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ipotane</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mormolykeia</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ophiotaurus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Argus_Panoptes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Arion_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Anemoi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Makhai</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/The_Cattle_of_Helios</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ichthyocentaurs</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chol_(bible)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cerastes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Teumessian_fox</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Eleionomae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Polybotes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Satyress</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Daemon_(classical_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Khalkotauroi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Myrmekes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Potamides_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kobalos</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gelin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sacred_snakes_of_Cephalonia</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Psychai</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aeternae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gargoyle</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Behemoth</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hydros_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Orc</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wani_(dragon)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yeti_(Doctor_Who)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gruagach_(Hellboy)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Two-Headed_Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lyngbakr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Coco_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Grover</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lotan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sandworm_(Dune)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ceto</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Frankenstein&#39;s_monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Anzû_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Elmo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leviathan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lizard_(comics)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ogre</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pinhead_(Hellraiser)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/The_Terrible_Dogfish</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Parallax_(comics)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pod_People_(Invasion_of_the_Body_Snatchers)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ebirah</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/MUTO</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gog_(Marvel_Comics)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kraken</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Henry_Hugglemonster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bride_of_Frankenstein_(character)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Murray_Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bishop-fish</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jersey_Devil</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chinese_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cthulhu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gamera</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Grendel</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jörmungandr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rodan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Telchines</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Necrid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Werehyena</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Stronsay_Beast</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hidebehind</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ladon_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Psoglav</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jiangshi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tannin_(monster)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lake_monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sea_monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sluagh</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Anguirus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Freddy_Krueger</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Milton_the_Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hafgufa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Akkorokamui</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aspidochelone</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Guivre</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Grendel&#39;s_mother</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Beast_of_Gévaudan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Graboid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yara-ma-yha-who</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Alraune</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fiery_flying_serpent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Swamp_monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Baragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ogdru_Jahad</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Titanosaurus_(Godzilla)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gill-man</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ogdru_Hem</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cookie_Monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Skeleton_(undead)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Feathered_Serpent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Stay_Puft_Marshmallow_Man</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Balaur</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pixiu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sea-lion</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ayia_Napa_sea_monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Diana_(Lights_Out)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ginger_Fitzgerald</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kabandha</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dormarch</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Devil_Whale</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Werewoman</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Feilong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tickle_monster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/E_Bukura_e_Dheut</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fatit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kukudh</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tomor</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Perëndi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Prende</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shurdhi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Verbti</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Djall</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zana_e_malit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xindhi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Albanian_mythology</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shtriga</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Constantin_and_Doruntinë</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Perit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/En_(Illyrian_god)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bolla</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Culture_of_Deçan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bardha</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aga_Ymeri</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Baloz</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shtojzovalle</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Princess_Argjiro</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kukudhi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ora_(mythological_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Drangue</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ljubi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/E_Bukura_e_Qiellit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Stihi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xhindi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abada_(unicorn)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aziza_(African_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ilomba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mazomba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tikoloshe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nyami_Nyami</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jengu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Somali_mythology</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kishi_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Samay_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kongamato</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Eloko</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kholomodumo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Obia_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Adze_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Asanbosam</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yumboes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lightning_bird</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Emela-ntouka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ninki_Nanka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rompo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Buda_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Inkanyamba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Umdhlebi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Obayifo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Baobhan_sith</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kitsune</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sirin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Narecnitsi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ubume</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Glaistig</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Berberoka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Les_Lavandières</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hone-onna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abere</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Peg_Powler</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Keong_Emas</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gwisin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aloja_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lilith_(Lurianic_Kabbalah)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ammit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Apsara</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pontianak_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/El_Naddaha</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Qandisa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Alkonost</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bakeneko</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shishiga</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amazake-babaa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Patasola</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Banshee</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lilith</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lilin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sirena_(Philippine_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lady_Midday</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Onibaba_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kikimora</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Morgen_(mythological_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Crone</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rokurokubi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yama-uba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yuki-onna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dakini</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lauma</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kiyohime</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kumiho</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Swan_maiden</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ameonna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Futakuchi-onna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nure-onna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Salabhanjika</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Akka_(spirit)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xana</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abyzou</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sânziană</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Berehynia</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Akhkhazu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xtabay</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tamamo-no-Mae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bean_nighe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bánánach</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gamayun</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Deer_Woman</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yuxa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shikome</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ciguapa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Weiße_Frauen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Al_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Undine</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aibell</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Askafroa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Biróg</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cihuateteo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Elli</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fionnuala</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Valkyrie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Boginki</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nocnitsa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Strzyga</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Samodiva_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hannya</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rhinemaidens</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Soucouyant</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jenny_Greenteeth</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sazae-oni</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dzunukwa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chesma_iyesi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amorōnagu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vesna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bloody_Mary_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Clíodhna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lamia_(Basque_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lamiai</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Anjana_(Cantabrian_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Korrigan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Brown_Lady_of_Raynham_Hall</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Agrat_bat_Mahlat</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Arikura-no-baba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Black_Lady_of_Bradley_Woods</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Drakaina_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Manananggal</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Alal</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Huli_jing</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lamashtu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ajatar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kuchisake-onna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Âu_Cơ</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nariphon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Delphyne</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_Queen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Al_Basty</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leanan_sídhe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Enchanted_Moura</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dames_blanches</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Apotamkin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Spey-wife</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/The_Mistress_of_the_Copper_Mountain</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hag</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/White_Lady_(ghost)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Maggy_Moulach</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Perchta</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sihuanaba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Witte_Wieven</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yakshini</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Churel</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sayona</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Datsue-ba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tunda</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hanako-san</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Legend_of_the_White_Snake</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mami_Wata</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shahmaran</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Teke_Teke</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sheela_na_gig</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Iele</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Harionago</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vâlvă</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vântoase</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Longana_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hashihime</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Batibat</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hag_of_the_mist</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jorōgumo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Caoineag</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Joan_the_Wad</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Asrai</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Likhoradka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Estries</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Božalość</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mu-onna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mikaribaba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Anggitay</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nicnevin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Queen_of_Elphame</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mama_D&#39;Leau</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Langsuyar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Elder_Mother</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Niles_Canyon_ghost</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Buschgroßmutter</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Azovka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/White_Greyhound_of_Richmond</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Winged_lion</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bat_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Merlion</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Melusine</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zilant</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leontophone</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rooster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aq_Bars</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/White_horse_of_Kent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pard_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Boars_in_heraldry</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/White_boar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wild_man</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Alphyn</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bear_in_heraldry</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wolves_in_heraldry</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Black_panther_(symbol)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lindworm</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hieracosphinx</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Marzocco</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Enfield_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pantheon_(mythical_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Panther_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Saxon_Steed</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Allocamelus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lion_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Musimon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wind_Horse</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Biscione</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Salamanders_in_folklore_and_legend</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Emmet_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tyger_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sea-bee_(creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ypotryll</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/The_Queen&#39;s_Beasts</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hound_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Talbot_(dog)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ged_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leopard_(heraldry)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yale_(mythical_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Catoblepas</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Winged_sea_caribou</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chechen_wolf</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sachsenross</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Calygreyhound</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gajasimha</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Theow</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lampago</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fenghuang</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/White_Tiger_(China)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zhulong_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shōjō</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sin-you</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xiezhi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chinese_guardian_lions</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Denglong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Longma</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bai_Ze</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shen_(clam-monster)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yinglong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nine-headed_Bird</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Taotie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vermilion_Bird</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zhenniao</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Qingniao</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Baku_(spirit)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chi_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hong_(rainbow-dragon)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Panlong_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Feng_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mogwai_(Chinese_culture)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bixi_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yellow_Dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nian</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tiangou</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bixie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ao_(turtle)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kui_(Chinese_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tianlong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Penghou</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Qiulong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jin_Chan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bashe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Peng_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Teng_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Black_Tortoise</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jiaolong</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xiao_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Azure_Dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wangliang</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Water_monkey</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xing_Tian</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jueyuan_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zouyu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chinese_monsters</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Quetzalcoatl</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hydrus_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amphiptere</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bel_and_the_Dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zmeu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jaculus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Princess_and_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lahamu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Teju_Jagua</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Imugi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bakunawa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dacian_Draco</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Draco_(constellation)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Draco_(military_standard)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Piasa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Apalala</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vritra</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Japanese_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Snallygaster</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vietnamese_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sugaar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dragon&#39;s_Eye_(symbol)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Druk</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yelbeghen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/La_Guita_Xica</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/West_Clandon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Veles_(god)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zburător</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Serpents_in_the_Bible</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Labbu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tugarin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Horned_Serpent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Typhon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Xiuhcoatl</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Herensuge</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Korean_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yam_(god)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Here_be_dragons</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rahab_(Egypt)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bune</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kur</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zahhak</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Marraco</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gaasyendietha</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Illuyanka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Peuchen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Brosno_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amaru_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tatzelwurm</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zirnitra</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dragon_Day</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ouroboros</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pickled_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dragon_of_Mordiford</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/The_dragon_and_daughter</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tanin&#39;iver</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Azhdahak_(Armenian_mythical_being)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dragon_jar</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vishap</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Three-legged_crow</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tepegoz</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Four_Benevolent_Animals</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nine_sons_of_the_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Four_Holy_Beasts</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Moon_rabbit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Three_hares</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aos_Sí</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dullahan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abcán</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Glas_Gaibhnenn</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Donn_Cuailnge</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gancanagh</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Clurichaun</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Liath_Macha_and_Dub_Sainglend</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Caoránach</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Daoine_maithe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Oilliphéist</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fear_gorta</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Changeling</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fetch_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Airitech</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Crom_Cruach</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Enbarr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abhartach</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pig-faced_women</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Far_darrig</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Púca</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Finnbhennach</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Salmon_of_Knowledge</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Failinis</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Joint-eater</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Merrow</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dabilla</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ellén_Trechend</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tuatha_Dé_Danann</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Winged_genie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_painting</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Paristan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pukwudgie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Maria_Sinukuan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Faerieworlds</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Jasy_Jatere</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fenodyree</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Patupaiarehe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Donas_de_fuera</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cottingley_Fairies</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gnome</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ileana_Cosânzeana</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Redcap</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Caipora</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Diwata</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tylwyth_Teg</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hob_(folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Maria_Makiling</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Călușari</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zână</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Phynnodderee</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_Investigation_Society</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Rusalka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tam_Lin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Classifications_of_fairies</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zarinaea</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_fort</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fox_spirit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_riding</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Iron_in_folklore</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Glashtin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tooth_fairy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yōsei</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bloody_Bones</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_Flag</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_path</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Teind</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairie_Festival</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Radande</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Adhene</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fear_Doirche</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mooinjer_veggey</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kobold</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Peri</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/The_Little_Mouse</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Maria_Cacao</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bluecap</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bauchan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Goblin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Green_Man</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gremlin</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairyland</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy_ring</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Haltija</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fat_Lips</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fairy-lock</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Monaciello</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Daragang_Magayon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Stray_sod</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dunnie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dead_fairy_hoax</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Atomy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kilmoulis</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Acalica</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Colt_pixie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mandi_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cynocephaly</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Forest_Bull</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Indus_worm</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gold-digging_ant</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Echeneis</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Seps_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gorgades</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Muscaliet</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bestiary</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Crocotta</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vegetable_Lamb_of_Tartary</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Petermännchen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chichevache</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Satyrus_(ape)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Headless_men</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hircocervus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Myrmecoleon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Orphan_Bird</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Monoceros_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hercinia</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bicorn_(monster)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Animalia_Paradoxa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sea_monk</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dipsa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pandi_(legendary_creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Parandrus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ethiopian_pegasus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hypnalis</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Scitalis</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Calingae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chromandi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Machlyes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Macrocephali</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Struthopodes</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Syrbotae</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Syrictæ</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nuli</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Grani</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Glad_(Norse_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Glær</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gyllir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gísl</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sleipnir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/White_horse_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Helhest</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gná_and_Hófvarpnir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Skinfaxi_and_Hrímfaxi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Svaðilfari</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Árvakr_and_Alsviðr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Falhófnir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gulltoppr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gullfaxi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hamskerpir_and_Garðrofa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Blóðughófi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hræsvelgr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Landvættir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ratatoskr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Eikþyrnir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Auðumbla</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Garmr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gullinkambi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Heiðrún</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hildisvíni</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Níðhöggr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sæhrímnir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gullinbursti</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Víðópnir</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Brunnmigi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vörðr</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hábrók</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dog_king</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Marmennill</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tsuchinoko</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abura-akago</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hyottoko</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kalaviṅka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Raijū</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Noppera-bō</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tsurube-otoshi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Samebito</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Karura</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abura-sumashi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aoandon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kussie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Isonade</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ningyo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yato-no-kami</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yūrei</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tengu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amanojaku</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kuda-gitsune</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Onryō</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kubikajiri</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gashadokuro</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Keukegen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Basan</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yamata_no_Orochi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kuraokami</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Issie</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kijimuna</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yofune-nushi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tenome</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wemic</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Underwater_panther</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tikbalang</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mbói_Tu&#39;ĩ</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Navagunjara</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dragon_turtle</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Peluda</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abraxas</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Horned_God</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cabbit</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mythological_hybrid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sharabha</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bestial_beast</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Peryton</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Makemake_(deity)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Quinotaur</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Humbaba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Skvader</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Tarasque</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fur-bearing_trout</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Serpopard</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Human–animal_hybrid</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Basilisco_Chilote</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ao_Ao</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gajamina</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yali_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Set_animal</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nue</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Surma_(Finnish_mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hatuibwari</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mythical_creatures_in_Burmese_folklore</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Blafard</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Minoan_Genius</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zitiron</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Apep</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bennu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Uraeus</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Blud</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bukavac</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cikavac</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Drekavac</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dola_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ovinnik</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fiery_serpents</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Likho</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ved_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ded_Moroz</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Slavic_dragon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Polevik</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Krasnoludek</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Firebird_(Slavic_folklore)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bannik</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Karzełek</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Lakanica</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Leshy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Nav&#39;</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Odmieńce</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Psotnik</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Raróg</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Topielec</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vodyanoy</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Baba_Yaga</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/German_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Skrzak</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dvorovoi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Koschei</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Snegurochka</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Zduhać</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Bagiennik</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Fext</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Vedmak</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Poroniec</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Barghest</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gytrash</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pesanta</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Freybug</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dip_(Catalan_myth)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Shisa</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cù_Sìth</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Waheela</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cavall</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Panhu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Sirius</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Black_Shuck</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gaueko</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Adlet</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amaguq</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gelert</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hecuba</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Keelut</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Qiqirn</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hundings</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cadejo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Maera_(hound)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Azeban</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dobhar-chú</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Inugami</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Luison</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Axehandle_hound</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Oude_Rode_Ogen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Aralez_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Ahuizotl_(creature)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Argos_(dog)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gwyllgi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mauthe_Doog</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Moddey_Dhoo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Husdent</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Dando&#39;s_dogs</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/The_Black_Dog_of_Newgate</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Hombre_Gato</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pombero</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Colombian_folklore</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Anchimayen</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Imbunche</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Moñái</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Juan_Machete</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Mohan_(legendary)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Chonchon</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Amarum</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Trauco</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Cherufe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Gualichu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Muki_(mythology)</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Wekufe</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Yacumama</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Kurupi</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Alicanto</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Loogaroo</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Pacanchique</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Abchanchu</uri></binding>
+  </result>
+  <result>
+   <binding name="name"><uri>http://dbpedia.org/resource/Monster_of_Lake_Fagua</uri></binding>
+  </result>
+ </results>
+</sparql>
