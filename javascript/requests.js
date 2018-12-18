@@ -37,8 +37,8 @@ function insertImage(subject) {
 
         if(resultats.results.bindings.length == 0 ) {
             $('#image').prev().remove();
-            //$('#image').append('<span>Image not found</span>'); 
-        } else {
+            //$('#image').append('<span>Image not found</span>');
+            } else {
             $(resultats.results.bindings).each( function(i) {
                 var result = resultats.results.bindings[i].out.value;
                 $("#image").append('<img src="' + result + '" />');
@@ -55,42 +55,79 @@ function insertSubject(subject) {
     query = encodeURIComponent(query);
     var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
 
-    $.getJSON(myurl + "&callback=?", function (resultats) {
+    var fetching = $.when();
 
-        if (resultats.results.bindings.length == 0) {
-            $('#subject').prev().remove();
-            //$('#subject').append('<span>Subject not found</span>');
-        } else {
-            $(resultats.results.bindings).each(function (i) {
-                var result = resultats.results.bindings[i].out.value;
+    fetching = fetching.pipe(function () {
+        return $.getJSON(myurl + "&callback=?", function (resultats) {
 
-                var query2 = result.replace('Category:',''); 
-                query2 = 'SELECT DISTINCT ?out WHERE {<' + query2 + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
-                
-                var myurl2 = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query2 + '&output=json';
-                $.getJSON(myurl2 + "&callback=?", function (resultats) {
+            if (resultats.results.bindings.length == 0) {
+                $('#subject').prev().remove();
+                //$('#subject').append('<span>Subject not found</span>');
+            } else {
+                $(resultats.results.bindings).each(function (i) {
+                    var result = resultats.results.bindings[i].out.value;
+                    
+                    $("#subject").append(   
+                                            '<h4 id="' + i + '">' + result + '</h4>');
 
-                    if (resultats.results.bindings.length == 0) {
-                        //$('#subject').append('<span>Subject not found</span>');
-                    } else {
-                        $(resultats.results.bindings).each(function (i) {
-                            var result = resultats.results.bindings[i].out.value;
-                            result = result.substring(result.lastIndexOf(':') + 1);
-                            result = result.replace(/_/g, ' ');
-                            $("#subject").append("<span>" + result + "<br /><span>");
-                        });
-                    }
-            
                 });
+            }
 
-                result = result.substring(result.lastIndexOf(':') + 1);
-                result = result.replace(/_/g, ' ');
-                $("#subject").append("<item>" + result + "<br /><item>");
-            });
-        }
-
+        });
     });
+
+    fetching.done(function () {
+        $('#subject h4').each(function(index){
+            var result = $(this).text();
+            var element = $(this);
+
+            var query2 = result.replace('Category:', '');
+            query2 = 'SELECT DISTINCT ?out WHERE {<' + query2 + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+            var myurl2 = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query2 + '&output=json';                
+            $.getJSON(myurl2 + "&callback=?", function (resultats) {
+
+                if (resultats.results.bindings.length == 0) {
+                    //element.parent.remove();
+                } else {
+                    $(resultats.results.bindings).each(function (i) {
+                        var result = resultats.results.bindings[i].out.value;
+                        result = result.substring(result.lastIndexOf(':') + 1);
+                        result = result.replace(/_/g, ' ');
+                        element.wrap('<div class="accordion"></div>');
+                        element.after('<div>'+ result+'</div>');
+                        element.attr('class','plegable');
+
+                        $('.accordion').accordion({
+                            // Slide animation or not or length
+                            animate: 100,
+                            // Starting tab
+                            active: false,
+                            // Collapsible if same tab is clicked
+                            collapsible: true,
+                            // Event that triggers
+                            event: "click",
+                            // Height based on content (content) or largest (auto)
+                            heightStyle: "content"
+                        });
+                    });
+                }
+    
+            });
+
+            result = result.substring(result.lastIndexOf(':') + 1);
+            result = result.replace(/_/g, ' ');
+            $("#"+index).text(result);
+
+        });
+
+        
+        
+    });
+
 }
+
+                    
+                    
 
 function insertGroup(subject) {
 

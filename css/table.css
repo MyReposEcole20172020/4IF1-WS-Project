@@ -36,7 +36,7 @@ text {
 a:link, a:visited {
     position: relative;
     font-size: 15px;
-    color: rgb(171, 196, 235);
+    color: rgb(125, 137, 238);
     text-decoration: none;
 }
 
@@ -56,3 +56,82 @@ a:hover {
     font-size: 250%;
     line-height: 1.15;
  }
+
+ .ui-widget-content {
+    position: relative !important;
+    font-size: 15px !important;
+    color: white !important;
+    background: transparent !important;
+    border: none !important;
+ }
+
+ .ui-accordion-header {
+    position: relative !important;
+    font-size: 15px !important;
+    color: lightblue !important;
+    background: transparent !important;
+    border: none !important;
+ }
+
+ .ui-accordion-header-icon {
+    display: none !important;
+ }
+
+ .ui-accordion {
+    position: relative;
+    /*font-size: 13px !important;*/
+    text-align: justify !important;
+    text-justify: inter-word !important;
+ }
+
+ .ui-accordion-active {
+    font-size: 13px !important;
+    margin-left: 0.5em !important;
+    color: rgb(236, 158, 195);
+ }
+
+ .ui-widget {
+    font-size: 13px !important;
+}
+
+.ui-accordion .ui-accordion-icons {
+    padding-left: none !important;
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: .0em .5em .0em .0em !important;
+    font-weight: bold !important;
+}
+
+.plegable {
+    font-family: 'Poppins', sans-serif !important;
+    color: rgb(125, 137, 238) !important;
+    margin: 0 0 0 0;
+    font-size: 15px;
+    background: transparent !important;
+    border: none !important;
+}
+
+.ui-state-hover {
+    background: transparent !important;
+    border: none !important;
+    color: rgb(236, 158, 195) !important;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif !important;
+    color: lightblue !important;
+    margin: 0 0 0 0;
+    font-size: 15px;
+    background: transparent !important;
+    border: none !important;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding-top: 1em;
+    padding-right: 0.0em;
+    padding-bottom: 1em;
+    padding-left: 1.2em;
+    border-top: 0;
+    overflow: auto;
+}
