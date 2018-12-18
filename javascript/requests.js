@@ -125,9 +125,6 @@ function insertSubject(subject) {
 
 }
 
-                    
-                    
-
 function insertGroup(subject) {
 
     var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:grouping' + ' ?out.}';
@@ -135,22 +132,76 @@ function insertGroup(subject) {
     query = encodeURIComponent(query);
     var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
 
-    $.getJSON(myurl + "&callback=?", function (resultats) {
+    var fetching = $.when();
 
-        if (resultats.results.bindings.length == 0) {
-            $('#group').prev().remove();
-            //$('#group').append('<span>Group not found</span>');
-        } else {
-            $(resultats.results.bindings).each(function (i) {
-                var result = resultats.results.bindings[i].out.value;
-                result = result.substring(result.lastIndexOf('/') + 1);
-                result = result.replace(/_/g, ' ');
-                $("#group").append("<item>" + result + "<br /><item>");
-            });
-        }
+    fetching = fetching.pipe(function () {
+        return $.getJSON(myurl + "&callback=?", function (resultats) {
 
+            if (resultats.results.bindings.length == 0) {
+                $('#group').prev().remove();
+                //$('#subject').append('<span>Subject not found</span>');
+            } else {
+                $(resultats.results.bindings).each(function (i) {
+                    var result = resultats.results.bindings[i].out.value;
+                    
+                    $("#group").append(   
+                                            '<h4 id="' + i + '">' + result + '</h4>');
+
+                });
+            }
+
+        });
     });
-}
+
+    fetching.done(function () {
+        $('#group h4').each(function(index){
+            var result = $(this).text();
+            var element = $(this);
+
+            var query2 = result.replace('Category:', '');
+            query2 = 'SELECT DISTINCT ?out WHERE {<' + query2 + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+            console.log("\n\n\n" + query2 + "\n\n\n");
+            var myurl2 = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query2 + '&output=json';                
+            $.getJSON(myurl2 + "&callback=?", function (resultats) {
+
+                if (resultats.results.bindings.length == 0) {
+                    //element.parent.remove();
+                } else {
+                    $(resultats.results.bindings).each(function (i) {
+                        var result = resultats.results.bindings[i].out.value;
+                        result = result.replace(/_/g, ' ');
+                        element.wrap('<div class="accordion"></div>');
+                        element.after('<div>'+ result+'</div>');
+                        element.attr('class','plegable');
+
+                        $('.accordion').accordion({
+                            // Slide animation or not or length
+                            animate: 100,
+                            // Starting tab
+                            active: false,
+                            // Collapsible if same tab is clicked
+                            collapsible: true,
+                            // Event that triggers
+                            event: "click",
+                            // Height based on content (content) or largest (auto)
+                            heightStyle: "content"
+                        });
+                    });
+                }
+    
+            });
+
+            result = result.substring(result.lastIndexOf('/') + 1);
+            result = result.replace(/_/g, ' ');
+            $("#group #"+index).text(result);
+
+        });
+
+        
+        
+    });
+
+}            
 
 function insertComment(subject) {
 
@@ -169,6 +220,9 @@ function insertComment(subject) {
                 var result = resultats.results.bindings[i].out.value;
                 //result = result.substring(result.lastIndexOf('/') + 1);
                 result = result.replace(/_/g, ' ');
+                if(result.substring(result.length - 1) != '.'){
+                    result = result + '.';
+                }
                 $("#comment").append("<text>" + result + "<br /><text>");
             });
         }
@@ -193,6 +247,7 @@ function insertGender(subject) {
                 var result = resultats.results.bindings[i].out.value;
                 result = result.substring(result.lastIndexOf('/') + 1);
                 result = result.replace(/_/g, ' ');
+                result = result.substring(0,1).toUpperCase() + result.substring(1); 
                 $("#gender").append("<item>" + result + "<br /><item>");
             });
         }
@@ -200,6 +255,87 @@ function insertGender(subject) {
     });
 }
 
+function insertBasedOn(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {{?out dbp:basedOn <' + subject + '>} UNION '
+                                           +'{?out dbo:basedOn <' + subject + '>}  UNION '
+                                           +'{<' + subject + '> dbp:based ?out.} UNION '
+                                           +'{?out dbp:based <' + subject + '>}}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    var fetching = $.when();
+
+    fetching = fetching.pipe(function () {
+        return $.getJSON(myurl + "&callback=?", function (resultats) {
+
+            if (resultats.results.bindings.length == 0) {
+                $('#basedOn').prev().remove();
+                //$('#subject').append('<span>Subject not found</span>');
+            } else {
+                $(resultats.results.bindings).each(function (i) {
+                    var result = resultats.results.bindings[i].out.value;
+                    
+                    $("#basedOn").append(   
+                                            '<h4 id="' + i + '">' + result + '</h4>');
+
+                });
+            }
+
+        });
+    });
+
+    fetching.done(function () {
+        $('#basedOn h4').each(function(index){
+            var result = $(this).text();
+            var element = $(this);
+
+            var query2 = result.replace('Category:', '');
+            query2 = 'SELECT DISTINCT ?out WHERE {<' + query2 + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+            console.log("\n\n\n" + query2 + "\n\n\n");
+            var myurl2 = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query2 + '&output=json';                
+            $.getJSON(myurl2 + "&callback=?", function (resultats) {
+
+                if (resultats.results.bindings.length == 0) {
+                    //element.parent.remove();
+                } else {
+                    $(resultats.results.bindings).each(function (i) {
+                        var result = resultats.results.bindings[i].out.value;
+                        result = result.replace(/_/g, ' ');
+                        element.wrap('<div class="accordion"></div>');
+                        element.after('<div>'+ result+'</div>');
+                        element.attr('class','plegable');
+
+                        $('.accordion').accordion({
+                            // Slide animation or not or length
+                            animate: 100,
+                            // Starting tab
+                            active: false,
+                            // Collapsible if same tab is clicked
+                            collapsible: true,
+                            // Event that triggers
+                            event: "click",
+                            // Height based on content (content) or largest (auto)
+                            heightStyle: "content"
+                        });
+                    });
+                }
+    
+            });
+
+            result = result.substring(result.lastIndexOf('/') + 1);
+            result = result.replace(/_/g, ' ');
+            $("#basedOn #"+index).text(result);
+
+        });
+
+        
+        
+    });
+
+}    
+/*
 function insertBasedOn(subject) {
 
     var query = 'SELECT DISTINCT ?out WHERE {{?out dbp:basedOn <' + subject + '>} UNION '
@@ -225,7 +361,7 @@ function insertBasedOn(subject) {
         }
 
     });
-}
+}*/
 
 function insertFirstAppearance(subject) {
 
