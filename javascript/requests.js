@@ -115,7 +115,7 @@ function insertSubject(subject) {
 
             result = result.substring(result.lastIndexOf(':') + 1);
             result = result.replace(/_/g, ' ');
-            $("#"+index).text(result);
+            $("#subject #"+index).text(result);
 
         });
 
@@ -301,6 +301,85 @@ function insertRegion(subject) {
 
 function insertHabitat(subject) {
 
+    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:habit' + ' ?out.}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    var fetching = $.when();
+
+    fetching = fetching.pipe(function () {
+        return $.getJSON(myurl + "&callback=?", function (resultats) {
+
+            if (resultats.results.bindings.length == 0) {
+                $('#habitat').prev().remove();
+                //$('#habitat').append('<span>Subject not found</span>');
+            } else {
+                $(resultats.results.bindings).each(function (i) {
+                    var result = resultats.results.bindings[i].out.value;
+                    
+                    $("#habitat").append(   
+                                            '<h4 id="' + i + '">' + result + '</h4>');
+
+                });
+            }
+
+        });
+    });
+
+    fetching.done(function () {
+        $('#habitat h4').each(function(index){
+            var result = $(this).text();
+            var element = $(this);
+
+            var query2 = result.replace('Category:', '');
+            query2 = 'SELECT DISTINCT ?out WHERE {<' + query2 + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+            console.log("\n\n\n" + query2 + "\n\n\n");
+            var myurl2 = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query2 + '&output=json';                
+            $.getJSON(myurl2 + "&callback=?", function (resultats) {
+
+                if (resultats.results.bindings.length == 0) {
+                    //element.parent.remove();
+                } else {
+                    $(resultats.results.bindings).each(function (i) {
+                        var result = resultats.results.bindings[i].out.value;
+                        result = result.replace(/_/g, ' ');
+                        element.wrap('<div class="accordion"></div>');
+                        element.after('<div>'+ result+'</div>');
+                        element.attr('class','plegable');
+
+                        $('.accordion').accordion({
+                            // Slide animation or not or length
+                            animate: 100,
+                            // Starting tab
+                            active: false,
+                            // Collapsible if same tab is clicked
+                            collapsible: true,
+                            // Event that triggers
+                            event: "click",
+                            // Height based on content (content) or largest (auto)
+                            heightStyle: "content"
+                        });
+                    });
+                }
+    
+            });
+
+            result = result.substring(result.lastIndexOf('/') + 1);
+            result = result.replace(/_/g, ' ');
+            $("#habitat #"+index).text(result);
+
+        });
+
+        
+        
+    });
+
+}
+
+/*
+function insertHabitat(subject) {
+
     var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:habit' + ' ?out.}'
     console.log("\n\n\n" + query + "\n\n\n");
     query = encodeURIComponent(query);
@@ -322,6 +401,7 @@ function insertHabitat(subject) {
 
     });
 }
+*/
 
 function insertMythology(subject) {
 

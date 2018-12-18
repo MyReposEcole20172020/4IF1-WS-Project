@@ -136,6 +136,10 @@ a:hover {
     border: none !important;
 }
 
+.plegable:hover {
+    font-size: 16px !important;
+}
+
 .ui-state-hover {
     background: transparent !important;
     border: none !important;
