@@ -36,8 +36,7 @@ function insertImage(subject) {
     $.getJSON(myurl + "&callback=?", function(resultats) {
 
         if(resultats.results.bindings.length == 0 ) {
-            $('#image').prev().remove();
-            //$('#image').append('<span>Image not found</span>');
+            $('#image').remove();
             } else {
             $(resultats.results.bindings).each( function(i) {
                 var result = resultats.results.bindings[i].out.value;

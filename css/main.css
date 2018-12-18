@@ -737,6 +737,7 @@ p {
 
 img {
   max-height: 400px;
-  max-width: 50%;
+  max-width: 100%;
+  min-width: 250px;
   background-color: white;
 }

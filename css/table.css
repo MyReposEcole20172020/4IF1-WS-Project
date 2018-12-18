@@ -3,12 +3,32 @@
 }
 
 table {
+    margin: 0.5em 0.5em 0.5em 0;
     color: white;
-    align-content: center;
+    align-content: left;
+    table-layout: fixed;
+    max-width: 100%;
+}
+
+tr{
+    max-width: 500px;
 }
 
 td {
-    text-align: center;
+    text-align: left;
+
+    padding: 0.5em 1em 0.5 0em;
+}
+
+td:empty {
+    display: none;
+}
+
+.adjust{
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    max-width: 100%;
 }
 
 span {
@@ -52,17 +72,18 @@ a:hover {
 }
 
 #name {
-    color: orangered;
+    color: rgb(208, 53, 135);
     font-size: 250%;
     line-height: 1.15;
  }
 
  .ui-widget-content {
     position: relative !important;
-    font-size: 15px !important;
+    font-size: 14px !important;
     color: white !important;
     background: transparent !important;
     border: none !important;
+    font-family: 'Poppins', sans-serif !important;
  }
 
  .ui-accordion-header {
@@ -71,6 +92,7 @@ a:hover {
     color: lightblue !important;
     background: transparent !important;
     border: none !important;
+    font-weight: normal !important;
  }
 
  .ui-accordion-header-icon {
@@ -85,13 +107,14 @@ a:hover {
  }
 
  .ui-accordion-active {
-    font-size: 13px !important;
+    font-size: 15px !important;
     margin-left: 0.5em !important;
     color: rgb(236, 158, 195);
  }
 
  .ui-widget {
-    font-size: 13px !important;
+    font-size: 15px !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .ui-accordion .ui-accordion-icons {
@@ -100,12 +123,13 @@ a:hover {
 
 .ui-accordion .ui-accordion-header {
     padding: .0em .5em .0em .0em !important;
-    font-weight: bold !important;
+    font-weight: normal !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .plegable {
     font-family: 'Poppins', sans-serif !important;
-    color: rgb(125, 137, 238) !important;
+    color: rgb(125, 170, 238) !important;
     margin: 0 0 0 0;
     font-size: 15px;
     background: transparent !important;
@@ -125,6 +149,8 @@ h4 {
     font-size: 15px;
     background: transparent !important;
     border: none !important;
+    font-weight: normal !important;
+    line-height: 1.3;
 }
 
 .ui-accordion .ui-accordion-content {
