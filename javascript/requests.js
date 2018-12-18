@@ -83,6 +83,7 @@ function insertSubject(subject) {
 
             var query2 = result.replace('Category:', '');
             query2 = 'SELECT DISTINCT ?out WHERE {<' + query2 + '> ' + 'rdfs:comment' + ' ?out. FILTER(lang(?out) = "en").}';
+            console.log("\n\n\n" + query2 + "\n\n\n");
             var myurl2 = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query2 + '&output=json';                
             $.getJSON(myurl2 + "&callback=?", function (resultats) {
 
@@ -91,7 +92,6 @@ function insertSubject(subject) {
                 } else {
                     $(resultats.results.bindings).each(function (i) {
                         var result = resultats.results.bindings[i].out.value;
-                        result = result.substring(result.lastIndexOf(':') + 1);
                         result = result.replace(/_/g, ' ');
                         element.wrap('<div class="accordion"></div>');
                         element.after('<div>'+ result+'</div>');
