@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<template>
+<meta>
+	<subject>dct:subject</subject>
+	<grouping>dbp:grouping</grouping>
+	<similar>dbp:similarCreatures</similar>
+	<topic>foaf:primaryTopic</topic>
+	<sameAs>owl:sameAs</sameAs>
+</meta>
+
+<requete>
+	<union>
+		<subject>dbc:Wolves_in_Norse_mythology</subject>
+		<subject>dbc:Greek_legendary_creatures</subject>
+		<subject>dbc:Monsters</subject>
+		<subject>dbc:Albanian_mythology</subject>
+		<subject>dbc:African_legendary_creatures</subject>
+		<subject>dbc:Female_legendary_creatures</subject>
+		<subject>dbc:Heraldic_beasts</subject>
+		<subject>dbc:Chinese_legendary_creatures</subject>
+		<subject>dbc:Asian_legendary_creatures</subject>
+		<subject>dbc:Dragons</subject>	
+		<subject>dbc:Irish_legendary_creatures</subject>
+		<subject>dbc:Fairies</subject>
+		<subject>dbc:Medieval_European_legendary_creatures</subject>
+		<subject>dbc:Horses_in_Norse_mythology</subject>
+		<subject>dbc:Mythological_hybrids</subject>
+		<subject>dbc:Egyptian_legendary_creatures</subject>
+		<subject>dbc:Slavic_legendary_creatures</subject>
+		<subject>dbc:Mythological_dogs</subject>
+		<subject>dbc:South_American_legendary_creatures</subject>	
+		<grouping>dbr:Legendary_creature</grouping>
+		<complex>
+			<subject>dbc:Supernatural_legends</subject>
+			<a>dbo:FictionalCharacter</a>
+		</complex>
+		<complex>
+			<subject>dbc:Japanese_legendary_creatures</subject>
+			<a>dbo:FictionalCharacter</a>
+		</complex>
+		<similar/>
+		<a>yago:WikicatCreaturesInNorseMythology</a>
+	</union>
+	<minus>
+		<subject>dbc:National_flags</subject>
+		<subject>dbc:Flags_of_China</subject>
+		<subject>dbc:Superstitions_of_Russia</subject>
+		<subject>dbc:Lists_of_legendary_creatures</subject>
+		<subject>dbc:Astrological_signs</subject>
+		<sameAs>dbr:Horses_of_the_Æsir</sameAs>
+	</minus>
+	<filterNotEx>
+		<topic>wikipedia-en:Cultural_depictions_of_Medusa_and_Gorgons</topic>
+		<topic>wikipedia-en:Albanian_folk_poetry</topic>
+		<topic>wikipedia-en:Albanian_Songs_of_the_Frontier_Warriors</topic>
+		<topic>wikipedia-en:Culture_of_Albania</topic>
+		<topic>wikipedia-en:List_of_The_Asylum_monsters</topic>
+		<topic>wikipedia-en:Dogs_in_Mesoamerican_folklore_and_myth</topic>
+		<topic>wikipedia-en:Dog_in_Chinese_mythology</topic>
+		<topic>wikipedia-en:Dogs_in_religion</topic>
+		<topic>wikipedia-en:Index_of_Egyptian_mythology_articles</topic>
+		<topic>wikipedia-en:Vampire_folklore_by_region</topic>
+		<topic>wikipedia-en:Supernatural_beings_in_Slavic_folklore</topic>
+	</filterNotEx>
+	<filterDiff>
+		<subject>http://dbpedia.org/page/Henry_Hugglemonster</subject>
+		<subject>http://dbpedia.org/page/Milton_the_Monster</subject>
+		<subject>http://dbpedia.org/page/Cottingley_Fairies</subject>
+		<subject>http://dbpedia.org/resource/Robert_Kirk_(folklorist)</subject>
+		<subject>http://dbpedia.org/resource/Serpent_(symbolism)</subject>
+	</filterDiff>
+	<filterURI/>
+	
+</requete>
+</template>
