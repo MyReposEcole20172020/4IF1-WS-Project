@@ -96,7 +96,9 @@
 		<subject>http://dbpedia.org/resource/Robert_Kirk_(folklorist)</subject>
 		<subject>http://dbpedia.org/resource/Serpent_(symbolism)</subject>
 	</filterDiff>
-	<filterRegex>"fair..","i"</filterRegex>
+	<filterRegex>
+		<regex>"fair..","i"</regex>
+	</filterRegex>
 	<filterURI/>
 	
 </requete>
