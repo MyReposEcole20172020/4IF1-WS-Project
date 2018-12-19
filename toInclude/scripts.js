@@ -343,14 +343,38 @@ function addFilterDiff(query, nodes, meta){
     return query;
 }
 
+function addFilterRegex(query, nodes){
+	for(i=0;i<nodes.length;i++){
+		query+='FILTER(regex(?out,' + nodes[i].innerHTML + ')).\n';
+	}
+	return query;
+}
+
+function addPrefix(nodes){
+	var query = 'PREFIX ';
+	console.log(nodes);
+	for(i=0;i<nodes.length;i++){
+		if(i>0)
+		{
+			query+=' , '
+		}
+		query+= nodes[i].tagName + ':<' + nodes[i].innerHTML + '>';
+	}
+	query+='\n';
+	return query;
+}
+
 function makeQuery(xmlDocumentUrl) {
 
     var xml = chargerHttpXML(xmlDocumentUrl);
     
     var meta = xml.getElementsByTagName("meta")[0];
     var requete = xml.getElementsByTagName("requete")[0];
-    
-    var query = 'SELECT DISTINCT ?out WHERE {{\n';
+	var prefix = xml.getElementsByTagName("prefix")[0].children;
+
+	var query=addPrefix(prefix);
+	
+    query += 'SELECT DISTINCT ?out WHERE {{\n';
     
     var unionChildren = requete.getElementsByTagName("union")[0].children;
     query=makeRequest(query,'UNION',unionChildren,meta,true);
@@ -363,7 +387,15 @@ function makeQuery(xmlDocumentUrl) {
     
     var filterDiffChildren = requete.getElementsByTagName("filterDiff")[0].children;
     query=addFilterDiff(query,filterDiffChildren,meta);
-    
+	
+    var filterRegexChildren = requete.getElementsByTagName("filterRegex")[0].children;
+	query=addFilterRegex(query,filterRegexChildren);
+	
+	if(requete.getElementsByTagName("filterURI").length != 0)
+	{
+		query+='FILTER(ISURI(?out))';
+	}
+	
     query+='}';
     console.log(query);
 }
