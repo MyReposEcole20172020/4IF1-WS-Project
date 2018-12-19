@@ -53,26 +53,26 @@
 		<subject>dbc:Superstitions_of_Russia</subject>
 		<subject>dbc:Lists_of_legendary_creatures</subject>
 		<subject>dbc:Astrological_signs</subject>
-		<a>dbo:WrittenWork<a/>
-		<hypernym>dbr:List<hypernym/>
-		<hypernym>dbr:Beliefs<hypernym/>
-		<hypernym>dbr:Nickname<hypernym/>
-		<hypernym>dbr:Novel<hypernym/>
-		<hypernym>dbr:Place<hypernym/>
-		<hypernym>dbr:Motif<hypernym/>
-		<hypernym>dbr:Folktale<hypernym/>
-		<hypernym>dbr:Ballad<hypernym/>
-		<hypernym>dbr:Hoax<hypernym/>
-		<hypernym>dbr:Event<hypernym/>
-		<hypernym>dbr:Carvings<hypernym/>
-		<hypernym>dbr:Ability<hypernym/>
-		<hypernym>dbr:Representation<hypernym/>
-		<hypernym>dbr:Fairyland<hypernym/>
-		<hypernym>dbr:Compendium<hypernym/>
-		<hypernym>dbr:Device<hypernym/>
-		<hypernym>dbr:Decoration<hypernym/>
-		<hypernym>dbr:Contellation<hypernym/>
-		<type>dbo:species<type/>
+		<a>dbo:WrittenWork</a>
+		<hypernym>dbr:List</hypernym>
+		<hypernym>dbr:Beliefs</hypernym>
+		<hypernym>dbr:Nickname</hypernym>
+		<hypernym>dbr:Novel</hypernym>
+		<hypernym>dbr:Place</hypernym>
+		<hypernym>dbr:Motif</hypernym>
+		<hypernym>dbr:Folktale</hypernym>
+		<hypernym>dbr:Ballad</hypernym>
+		<hypernym>dbr:Hoax</hypernym>
+		<hypernym>dbr:Event</hypernym>
+		<hypernym>dbr:Carvings</hypernym>
+		<hypernym>dbr:Ability</hypernym>
+		<hypernym>dbr:Representation</hypernym>
+		<hypernym>dbr:Fairyland</hypernym>
+		<hypernym>dbr:Compendium</hypernym>
+		<hypernym>dbr:Device</hypernym>
+		<hypernym>dbr:Decoration</hypernym>
+		<hypernym>dbr:Contellation</hypernym>
+		<type>dbo:species</type>
 		<sameAs>dbr:Horses_of_the_Æsir</sameAs>
 	</minus>
 	<filterNotEx>
