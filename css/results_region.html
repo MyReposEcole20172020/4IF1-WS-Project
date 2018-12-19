@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <!DOCTYPE html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+    
+    
+    
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  </head>
+  <body>
+    <div class="s01">
+      <form type="result">
+        <fieldset>
+          <div id="title"><legend type="result">Fantastic Creatures</legend></div>
+          <div class="inner-form" content="buttons">
+              <div class="input-field third-wrap" type="result">
+              <button class="btn-back" type="button" onClick="goToIndex()">Return to research</button>
+              </div>
+              <div class="input-field third-wrap" type="result">
+                  <button class="btn-back" type="button" onClick="goToMap()">Go to map</button>
+              </div>
+          </div>
+        </fieldset>
+
+        <div class="inner-form" type="result">
+            <div class="result-field first-wrap">
+              <div id="result"></div>
+            </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Description -->
+    <div id="description">
+      <!--<span id="sub-title">Description of this creature</span>-->
+      <span id="name"></span>
+      <table>
+          
+          <tr>
+              <td><div id="image"></div></td>
+              <td class="adjust"><p>Description</p><div id="comment"></div></td>
+          </tr>
+      </table>
+      <p>Related to:</p>
+      <div id="subject"></div>
+      <p>Group:</p>
+      <div id="group"></div>
+      <p>Gender:</p>
+      <div id="gender"></div>
+      <p>Based on:</p>
+      <div id="basedOn"></div>
+      <p>First Appearance:</p>
+      <div id="firstAppearance"></div>
+      <p>Country:</p>
+      <div id="country"></div>
+      <p>Region:</p>
+      <div id="region"></div>
+      <p>Habitat:</p>
+      <div id="habitat"></div>
+      <p>Mythology:</p>
+      <div id="mythology"></div>
+      <p>Similar Creatures:</p>
+      <div id="similarCreatures"></div>
+      <p><br />Search on Wikipedia :<a id="wikipedia" target="_blank"></a></p>
+    </div>
+    
+    <div id="temp"></div>
+
+    <script src="javascript/main.js"></script>
+    <script src="javascript/requests.js"></script>
+
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

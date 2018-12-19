@@ -95,31 +95,11 @@ function colorSVG(svg, regionsXML){
     }
 }
 
-var svg;
-function setSVG(v){
-    svg = v;
-}
-function getSVG(){
-    return svg;
-}
-var regionsXML;
-function setRegionsXML(v){
-    regionsXML = v;
-}
-function getRegionsXML(){
-    return regionsXML;
-}
-
 function displaySVG(svgDocumentUrl,regionsXMLDocumentUrl,newElementName,elReplace){
     var svg = loadSVG(svgDocumentUrl,newElementName,elReplace);
     var regionsXML = chargerHttpXML(regionsXMLDocumentUrl);
-    setSVG(svg);
-    setRegionsXML(regionsXML);
     colorSVG(svg, regionsXML);
 }
-
-
-
 
 //-----------------------------------------------------------
 function clickEvent(){
@@ -132,6 +112,7 @@ function clickEvent(){
     var country = xml.getElementById(id);
     var regionName = country.parentElement.getElementsByTagName("name")[0].innerHTML;
 
+    goToRegionList(regionName);
     //elementHtmlParent.innerHTML = "Clicked on :</br>Country : " + this.getAttribute("title") + "</br>Region : " + regionName;
     
 }
@@ -275,7 +256,6 @@ function processAndDownloadXML(xmlDocumentUrl,xslDocumentUrl){
 
     downloadXML(newXmlDocument);
 }
-
 
 
 function createCountriesTable(){
@@ -435,4 +415,18 @@ function sortCreaturesByRegion(creaturesXMLDocumentUrl,regionsXMLDocumentUrl){
     var creaturesXML = chargerHttpXML(creaturesXMLDocumentUrl);
     var regionsXML = chargerHttpXML(regionsXMLDocumentUrl);
 
+}
+
+function goToRegionList(value) {
+
+    var xml = chargerHttpXML("fantastic_regions_countries.xml");
+    var regions = xml.getElementsByTagName("fantastic_region");
+    for (var i = 0; i<regions.length;i++) {
+        if(value == regions[i].getElementsByTagName("name")[0].innerHTML){
+            var url='results_region.html?myVariable='+value;
+            document.location.href = url;
+            return 0;
+        }
+    }
+    
 }
