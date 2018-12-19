@@ -155,8 +155,8 @@ function highLight(idRegion,svg){
     for(i=0;i<idCountries.length;i++){
 
         //svg.getElementById(idCountries[i]).style.fill="green";
-        svg.getElementById(idCountries[i]).style.fill='red';
-        svg.getElementById(idCountries[i]).style.opacity="0.9";
+        svg.getElementById(idCountries[i]).style.fill='orangered';
+        svg.getElementById(idCountries[i]).style.opacity="0.6";
     }
 }
 
@@ -198,8 +198,6 @@ function getRegionCountries(xmlDocumentUrl,idRegion){
 }
 
 function MouseOverEvent(){
-
-    /*var elementHtmlParent = window.document.getElementById(MouseOverEvent.mouseOverDisplay);*/
     
     var id = this.getAttribute("id");
     var svg = this.ownerSVGElement;
@@ -215,9 +213,7 @@ function MouseOverEvent(){
     var xml = chargerHttpXML("fantastic_regions_countries.xml");
     var country = xml.getElementById(id);
     var regionName = country.parentElement.getElementsByTagName("name")[0].innerHTML;
-
-    /*elementHtmlParent.innerHTML = "Region : " + regionName;
-    console.log(regionName);*/
+    window.document.getElementById('region').innerHTML = regionName;
 
     MouseOverEvent.regionId = idRegion;
 
