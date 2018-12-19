@@ -23,6 +23,7 @@ $("document").ready(function () {
     insertHabitat(inputURI);
     insertMythology(inputURI);
     insertSimilarCreatures(inputURI);
+    insertLinkWikipedia(inputURI);
 
 });
     
@@ -513,32 +514,6 @@ function insertHabitat(subject) {
 
 }
 
-/*
-function insertHabitat(subject) {
-
-    var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:habit' + ' ?out.}'
-    console.log("\n\n\n" + query + "\n\n\n");
-    query = encodeURIComponent(query);
-    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
-
-    $.getJSON(myurl + "&callback=?", function (resultats) {
-
-        if (resultats.results.bindings.length == 0) {
-            $('#habitat').prev().remove();
-            //$('#habitat').append('<span>Habitat not found</span>');
-        } else {
-            $(resultats.results.bindings).each(function (i) {
-                var result = resultats.results.bindings[i].out.value;
-                result = result.substring(result.lastIndexOf('/') + 1);
-                result = result.replace(/_/g, ' ');
-                $("#habitat").append("<item>" + result + "<br /><item>");
-            });
-        }
-
-    });
-}
-*/
-
 function insertMythology(subject) {
 
     var query = 'SELECT DISTINCT ?out WHERE {<' + subject + '> ' + 'dbp:mythology' + ' ?out.}'
@@ -597,6 +572,42 @@ function insertSimilarCreatures(subject) {
                     $("#similarCreatures").append('<a href="' + result + '">' + label + '<br /></a>');
                 }
                 
+            });
+        }
+
+    });
+}
+
+function insertLinkWikipedia(subject) {
+
+    var query = 'SELECT DISTINCT ?out WHERE {{<' + subject + '> ' + 'foaf:isPrimaryTopicOf' + ' ?out.} UNION '
+                                            +'{?out dbp:similarCreatures <' + subject + '>}}';
+    console.log("\n\n\n" + query + "\n\n\n");
+    query = encodeURIComponent(query);
+    var myurl = 'http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&query=' + query + '&output=json';
+
+    $.getJSON(myurl + "&callback=?", function (resultats) {
+
+        if (resultats.results.bindings.length == 0) {
+            $('#wikipedia').remove();
+            //$('#similarCreatures').append('<span>Similar creatures not found</span>');
+        } else {
+            $(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[i].out.value;
+                alert(result);
+                var label = result.substring(result.lastIndexOf('/') + 1);
+                if(label.indexOf('(') != -1) {
+                    label = label.substring(0,label.indexOf('('));
+                  }
+                  if(label.lastIndexOf('_') == (label.length-1)) {
+                    label = label.substring(0,label.lastIndexOf('_'));
+                  }
+                label = label.replace(/_/g, ' ');
+                alert(label);
+                /*var myUrl =parent.document.URL.substring(0,parent.document.URL.lastIndexOf('=')+1); 
+                result = myUrl + label;*/
+                $("#wikipedia").attr('href', result);
+                $("#wikipedia").append(' ' + label + '<br />');                
             });
         }
 
