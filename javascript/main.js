@@ -56,7 +56,7 @@ function goToIndex() {
 }
 
 function goToMap() {
-  var url = "map.html";
+  var url = "ws_map_test.html";
   document.location.href = url;
 }
 

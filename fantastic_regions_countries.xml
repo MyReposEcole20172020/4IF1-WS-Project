@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fantastic_regions>
+	<metadonnees>
+		<description>Fichier xml contenant des informations sur les regions contenant des crétures fantastiques. 
+		</description>
+		<cree_le>2018/12/11</cree_le>
+		<objectif>Données pour illuster le Projet Web Sémantique, 4IF, Département Informatique INSA de Lyon</objectif>
+	</metadonnees>
+	
+	<fantastic_region id="Others">
+		<name>Others</name>
+		<color>#c9a690</color>
+		
+		<real_country id="HM">Heard Island and McDonald Islands</real_country>
+	
+		<real_country id="KI">Kiribati</real_country>
+		<real_country id="MH">Marshall Islands</real_country>
+		<real_country id="MP">Northern Mariana Islands</real_country>
+		<real_country id="NR">Nauru</real_country>
+		<real_country id="NU">Niue</real_country>
+		<real_country id="PF">French Polynesia</real_country>
+		<real_country id="PN">Pitcairn Islands</real_country>
+		<real_country id="SC">Seychelles</real_country>
+		<real_country id="SH">Saint Helena</real_country>
+		<real_country id="TF">French Southern and Antarctic Lands</real_country>
+		<real_country id="TK">Tokelau</real_country>
+		<real_country id="TV">Tuvalu</real_country>
+		<real_country id="UM-DQ">Jarvis Island</real_country>
+		<real_country id="UM-FQ">Baker Island</real_country>
+		<real_country id="UM-HQ">Howland Island</real_country>
+		<real_country id="UM-JQ">Johnston Atoll</real_country>
+		<real_country id="UM-MQ">Midway Islands</real_country>
+		<real_country id="UM-WQ">Wake Island</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Great_Britain">
+		<name>Great Britain</name>
+		<color>#d36582</color>
+		
+		<dbpedia_country>"England"</dbpedia_country>
+		<dbpedia_country>"UK"</dbpedia_country>
+		<dbpedia_country>"Ireland"</dbpedia_country>
+		<dbpedia_country>"Scotland"</dbpedia_country>
+		<dbpedia_country>"Scotland and Northern England"</dbpedia_country>
+		<dbpedia_country>Ireland</dbpedia_country>
+		<dbpedia_country>"Northwestern Europe, Scandinavia, British Isles, United States"</dbpedia_country>
+		<dbpedia_country>"Wales, United Kingdom"</dbpedia_country>
+		<dbpedia_country>"Wales"</dbpedia_country>
+		<dbpedia_country>"United Kingdom"</dbpedia_country>
+		
+		<dbpedia_region>"London/Liverpool"</dbpedia_region>
+		<dbpedia_region>"South East England"</dbpedia_region>
+		<dbpedia_region>"Scottish Highlands"</dbpedia_region>
+		<dbpedia_region>"London"</dbpedia_region>
+		<dbpedia_region>"England"</dbpedia_region>
+		<dbpedia_region>“Cornwall, Devon”</dbpedia_region>
+		
+		<dbpedia_regex>Ireland</dbpedia_regex>
+		<dbpedia_regex>United_Kingdom</dbpedia_regex>
+		<dbpedia_regex>Celtic</dbpedia_regex>
+		<dbpedia_regex>Irish</dbpedia_regex>
+		<dbpedia_regex>English</dbpedia_regex>
+		<dbpedia_regex>British</dbpedia_regex>
+		<dbpedia_regex>Scotland</dbpedia_regex>
+		<dbpedia_regex>Welsh</dbpedia_regex>
+		<dbpedia_regex>Scottish</dbpedia_regex>
+		<dbpedia_regex>Manx</dbpedia_regex>
+		
+		<real_country id="GB">United Kingdom</real_country>
+		<real_country id="GG">Guernsey</real_country>
+		<real_country id="IE">Ireland</real_country>
+		<real_country id="IM">Isle of Man</real_country>
+		<real_country id="JE">Jersey</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Europa">
+		<name>Europa</name>
+		<color>#2b4570</color>
+	
+		<dbpedia_country>"France"</dbpedia_country>
+		<dbpedia_country>Balkans</dbpedia_country>
+		<dbpedia_country>"Born in Libya but roams throughout Europe"</dbpedia_country>
+		<dbpedia_country>Bulgaria</dbpedia_country>
+		<dbpedia_country>Bosnia_and_Herzegovina</dbpedia_country>
+		<dbpedia_country>Germany</dbpedia_country>
+		<dbpedia_country>Republic_of_Macedonia</dbpedia_country>
+		<dbpedia_country>Transylvania</dbpedia_country>
+		<dbpedia_country>Serbia</dbpedia_country>
+		<dbpedia_country>Slavic_Europe</dbpedia_country>
+		
+		<dbpedia_region>Europe</dbpedia_region>
+		<dbpedia_region>"Europe"</dbpedia_region>
+		<dbpedia_region>"Gévaudan"</dbpedia_region>
+		<dbpedia_region>"Northern Europe"</dbpedia_region>
+		<dbpedia_region>Southeastern_Europe</dbpedia_region>
+		<dbpedia_region>Balkans</dbpedia_region>
+		
+		<dbpedia_regex>Roman_</dbpedia_regex>
+		<dbpedia_regex>Basque</dbpedia_regex>
+		<dbpedia_regex>Christ</dbpedia_regex>
+		<dbpedia_regex>Medieval</dbpedia_regex>
+		<dbpedia_regex>Dutch</dbpedia_regex>
+		<dbpedia_regex>France</dbpedia_regex>
+		<dbpedia_regex>Slovene</dbpedia_regex>
+		<dbpedia_regex>Slavic</dbpedia_regex>
+		<dbpedia_regex>Ukrainian</dbpedia_regex>
+		<dbpedia_regex>Catalan</dbpedia_regex>
+		<dbpedia_regex>Bulgarian</dbpedia_regex>
+		<dbpedia_regex>Albanian</dbpedia_regex>
+		<dbpedia_regex>German</dbpedia_regex>
+		<dbpedia_regex>Italian</dbpedia_regex>
+		<dbpedia_regex>French</dbpedia_regex>
+		<dbpedia_regex>Portuguese</dbpedia_regex>
+		<dbpedia_regex>Serbian</dbpedia_regex>
+		<dbpedia_regex>Spanish</dbpedia_regex>
+		<dbpedia_regex>Celtic</dbpedia_regex>
+		<dbpedia_regex>European</dbpedia_regex>
+		<dbpedia_regex>Florence</dbpedia_regex>
+		<dbpedia_regex>Romanian</dbpedia_regex>
+		<dbpedia_regex>Milan</dbpedia_regex>
+		<dbpedia_regex>Lithuanian</dbpedia_regex>
+		
+		<real_country id="AD">Andorra</real_country>
+		<real_country id="AL">Albania</real_country>
+		<real_country id="AT">Austria</real_country>
+		<real_country id="BA">Bosnia and Herzegovina</real_country>
+		<real_country id="BE">Belgium</real_country>
+		<real_country id="BG">Bulgaria</real_country>
+		<real_country id="BY">Belarus</real_country>
+		<real_country id="CH">Switzerland</real_country>
+		<real_country id="CZ">Czech Republic</real_country>
+		<real_country id="DE">Germany</real_country>
+		<real_country id="EE">Estonia</real_country>
+		<real_country id="ES">Spain</real_country>
+		<real_country id="FR">France</real_country>
+		<real_country id="GI">Gibraltar</real_country>
+		<real_country id="HR">Croatia</real_country>
+		<real_country id="HU">Hungary</real_country>
+		<real_country id="IT">Italy</real_country>
+		<real_country id="XK">Kosovo</real_country>
+		<real_country id="LI">Liechtenstein</real_country>
+		<real_country id="LU">Luxembourg</real_country>
+		<real_country id="LT">Lithuania</real_country>
+		<real_country id="LV">Latvia</real_country>
+		<real_country id="MC">Monaco</real_country>
+		<real_country id="MD">Moldova</real_country>
+		<real_country id="ME">Montenegro</real_country>
+		<real_country id="MK">Macedonia</real_country>
+		<real_country id="MT">Malta</real_country>
+		<real_country id="NL">Netherlands</real_country>
+		<real_country id="PL">Poland</real_country>
+		<real_country id="PT">Portugal</real_country>
+		<real_country id="RO">Romania</real_country>
+		<real_country id="RS">Serbia</real_country>
+		<real_country id="SI">Slovenia</real_country>
+		<real_country id="SK">Slovakia</real_country>
+		<real_country id="SM">San Marino</real_country>
+		<real_country id="UA">Ukraine</real_country>
+		<real_country id="VA">Vatican City</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Russia">
+		<name>Russia</name>
+		<color>#ede7d9</color>
+	
+		<dbpedia_country>Russia</dbpedia_country>
+		
+		<dbpedia_region>Tver</dbpedia_region>
+		
+		<dbpedia_regex>Russian</dbpedia_regex>
+		
+		<real_country id="RU">Russia</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Norse">
+		<name>Norse</name>
+		<color>#bfdbf7</color>
+	
+		<dbpedia_country>Finland</dbpedia_country>
+		<dbpedia_country>"Northwestern Europe, Scandinavia, British Isles, United States"</dbpedia_country>
+		<dbpedia_country>Scandinavia</dbpedia_country>
+		
+		<dbpedia_regex>Norse_Mythology</dbpedia_regex>
+		<dbpedia_regex>Scandinavian</dbpedia_regex>
+		
+		<real_country id="AX">Aland Islands</real_country>
+		<real_country id="DK">Denmark</real_country>
+		<real_country id="FI">Finland</real_country>
+		<real_country id="FO">Faroa Islands</real_country>
+		<real_country id="IS">Iceland</real_country>
+		<real_country id="NO">Norway</real_country>
+		<real_country id="SE">Sweden</real_country>
+		<real_country id="SJ">Svalbard and Jan Mayen</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Greece">
+		<name>Greece</name>
+		<color>#735cdd</color>
+	
+		<dbpedia_country>Ancient_Greece</dbpedia_country>
+		<dbpedia_country>"Greece"</dbpedia_country>
+		<dbpedia_country>Greece</dbpedia_country>
+		
+		<dbpedia_region>Keryneia,_Greece</dbpedia_region>
+		<dbpedia_region>Greece</dbpedia_region>
+		<dbpedia_region>“Thrace"</dbpedia_region>
+		<dbpedia_region>Arcadia</dbpedia_region>
+		<dbpedia_region>Crete</dbpedia_region>
+		<dbpedia_region>Sirenum_scopuli</dbpedia_region>
+		
+		<dbpedia_regex>Greek</dbpedia_regex>
+		<dbpedia_regex>Olympia</dbpedia_regex>
+		<dbpedia_regex>Greece</dbpedia_regex>
+		<dbpedia_regex>Cretan</dbpedia_regex>
+		<dbpedia_regex>Greco-Roman</dbpedia_regex>
+		
+		<real_country id="GR">Greece</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Africa">
+		<name>Africa</name>
+		<color>#4b4237</color>
+	
+		<dbpedia_country>"Born in Libya but roams throughout Europe"</dbpedia_country>
+		<dbpedia_country>"South Africa"</dbpedia_country>
+		<dbpedia_country>Central_Africa</dbpedia_country>
+		<dbpedia_country>South_Africa</dbpedia_country>
+		<dbpedia_country>Zambia</dbpedia_country>
+		<dbpedia_country>Zimbabwe</dbpedia_country>
+		
+		<dbpedia_region>Africa</dbpedia_region>
+		<dbpedia_region>Angola</dbpedia_region>
+		<dbpedia_region>Congo_River_basin</dbpedia_region>
+		<dbpedia_region>Zambia</dbpedia_region>
+		<dbpedia_region>"Howick Falls"</dbpedia_region>
+		<dbpedia_region>"Richtersveld"</dbpedia_region>
+		<dbpedia_region>Democratic_Republic_of_Congo</dbpedia_region>
+		<dbpedia_region>Zambezi</dbpedia_region>
+		<dbpedia_region>Zulu_Kingdom</dbpedia_region>
+		
+		<dbpedia_regex>Africa</dbpedia_regex>
+		<dbpedia_regex>Libya</dbpedia_regex>
+		<dbpedia_regex>Congo</dbpedia_regex>
+		<dbpedia_regex>Ethiopia</dbpedia_regex>
+		<dbpedia_regex>Ivorian</dbpedia_regex>
+		<dbpedia_regex>Togolese</dbpedia_regex>
+		
+		<real_country id="AO">Angola</real_country>
+		<real_country id="BF">Burkina Faso</real_country>
+		<real_country id="BI">Burundi</real_country>
+		<real_country id="BJ">Benin</real_country>
+		<real_country id="BW">Botswana</real_country>
+		<real_country id="CD">Democratic Republic of Congo</real_country>
+		<real_country id="CF">Central African Republic</real_country>
+		<real_country id="CG">Republic of Congo</real_country>
+		<real_country id="CI">Côte d'Ivoire</real_country>
+		<real_country id="CM">Cameroon</real_country>
+		<real_country id="DJ">Djibouti</real_country>
+		<real_country id="DZ">Algeria</real_country>
+		<real_country id="EH">Western Sahara</real_country>
+		<real_country id="ER">Eritrea</real_country>
+		<real_country id="ET">Ethiopia</real_country>
+		<real_country id="GA">Gabon</real_country>
+		<real_country id="GH">Ghana</real_country>
+		<real_country id="GM">Gambia</real_country>
+		<real_country id="GN">Guinea</real_country>
+		<real_country id="GO">Glorioso Islands</real_country>
+		<real_country id="GQ">Equatorial Guinea</real_country>
+		<real_country id="GW">Guinea-Bissau</real_country>
+		<real_country id="KE">Kenya</real_country>
+		<real_country id="JU">Juan De Nova Island</real_country>
+		<real_country id="KM">Comoros</real_country>
+		<real_country id="LR">Liberia</real_country>
+		<real_country id="LS">Lesotho</real_country>
+		<real_country id="LY">Lybia</real_country>
+		<real_country id="MA">Morocco</real_country>
+		<real_country id="MG">Madagascar</real_country>
+		<real_country id="ML">Mali</real_country>
+		<real_country id="MR">Mauritania</real_country>
+		<real_country id="MU">Mauritius</real_country>
+		<real_country id="MW">Malawi</real_country>
+		<real_country id="MZ">Mozambique</real_country>
+		<real_country id="NA">Namibia</real_country>
+		<real_country id="NE">Niger</real_country>
+		<real_country id="NG">Nigeria</real_country>
+		<real_country id="RE">Reunion</real_country>
+		<real_country id="RW">Rwanda</real_country>
+		<real_country id="SD">Sudan</real_country>
+		<real_country id="SL">Sierra Leone</real_country>
+		<real_country id="SN">Senegal</real_country>
+		<real_country id="SO">Somalia</real_country>
+		<real_country id="SS">South Sudan</real_country>
+		<real_country id="ST">Sao Tome and Principe</real_country>
+		<real_country id="SZ">Swaziland</real_country>
+		<real_country id="TD">Chad</real_country>
+		<real_country id="TG">Togo</real_country>
+		<real_country id="TN">Tunisia</real_country>
+		<real_country id="TZ">Tanzania</real_country>
+		<real_country id="UG">Uganda</real_country>
+		<real_country id="YT">Mayotte</real_country>
+		<real_country id="ZA">South Africa</real_country>
+		<real_country id="ZM">Zambia</real_country>
+		<real_country id="ZW">Zimbabwe</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Egypt">
+		<name>Egypt</name>
+		<color>#ee964b</color>
+		
+		<dbpedia_region>"Nile delta region"</dbpedia_region>
+		
+		<dbpedia_regex>Egyptian</dbpedia_regex>
+		
+		<real_country id="EG">Egypt</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Middle_East">
+		<name>Middle East</name>
+		<color>#f95738</color>
+	
+		<dbpedia_country>Cyprus</dbpedia_country>
+		<dbpedia_country>Turkey</dbpedia_country>
+		
+		<dbpedia_region>Cyprus</dbpedia_region>
+		<dbpedia_region>Kouris_Dam</dbpedia_region>
+		<dbpedia_region>Cape_Greco</dbpedia_region>
+		<dbpedia_region>Middle_East</dbpedia_region>
+		
+		<dbpedia_regex>Persian</dbpedia_regex>
+		<dbpedia_regex>Turkic</dbpedia_regex>
+		<dbpedia_regex>Turkish</dbpedia_regex>
+		<dbpedia_regex>Iranian</dbpedia_regex>
+		<dbpedia_regex>Arabian</dbpedia_regex>
+		<dbpedia_regex>Mesopotamian</dbpedia_regex>
+		<dbpedia_regex>Armenia</dbpedia_regex>
+		<dbpedia_regex>Iraqi</dbpedia_regex>
+		<dbpedia_regex>Persia</dbpedia_regex>
+		<dbpedia_regex>Iran</dbpedia_regex>
+		<dbpedia_regex>Judaism</dbpedia_regex>
+		<dbpedia_regex>Hebrew</dbpedia_regex>
+		<dbpedia_regex>Jewish</dbpedia_regex>
+		<dbpedia_regex>Islamic</dbpedia_regex>
+		
+		<real_country id="AE">United Arab Emirates</real_country>
+		<real_country id="AF">Afghanistan</real_country>
+		<real_country id="AM">Armenia</real_country>
+		<real_country id="AZ">Azerbaijan</real_country>
+		<real_country id="BH">Bahrain</real_country>
+		<real_country id="CY">Cyprus</real_country>
+		<real_country id="GE">Georgia</real_country>
+		<real_country id="IL">Israel</real_country>
+		<real_country id="IQ">Iraq</real_country>
+		<real_country id="IR">Iran</real_country>
+		<real_country id="JO">Jordan</real_country>
+		<real_country id="KG">Kyrgyzstan</real_country>
+		<real_country id="KZ">Kazakhstan</real_country>
+		<real_country id="KW">Kuwait</real_country>
+		<real_country id="LB">Lebanon</real_country>
+		<real_country id="OM">Oman</real_country>
+		<real_country id="PK">Pakistan</real_country>
+		<real_country id="PS">Palestinian Territories</real_country>
+		<real_country id="QA">Qatar</real_country>
+		<real_country id="SA">Saudi Arabia</real_country>
+		<real_country id="SY">Syria</real_country>
+		<real_country id="TJ">Tajikistan</real_country>
+		<real_country id="TM">Turkmenistan</real_country>
+		<real_country id="TR">Turkey</real_country>
+		<real_country id="UZ">Uzbekistan</real_country>
+		<real_country id="YE">Yemen</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Greenland">
+		<name>Greenland</name>
+		<color>#e1e5f2</color>
+	
+		<dbpedia_country>Greenland</dbpedia_country>
+		
+		<dbpedia_regex>Inuit</dbpedia_regex>
+		
+		<real_country id="GL">Greenland</real_country>
+	</fantastic_region>
+		
+	<fantastic_region id="Asia">
+		<name>Asia</name>
+		<color>#bdd358</color>
+	
+		<dbpedia_country>Malaysia</dbpedia_country>
+		<dbpedia_country>Indonesia</dbpedia_country>
+		<dbpedia_country>Cambodia</dbpedia_country>
+		<dbpedia_country>India</dbpedia_country>
+		<dbpedia_country>Thailand</dbpedia_country>
+		<dbpedia_country>Laos</dbpedia_country>
+		<dbpedia_country>Philippines</dbpedia_country>		
+		
+		<dbpedia_region>"Philippines"</dbpedia_region>
+		<dbpedia_region>“Central Asia”</dbpedia_region>
+		<dbpedia_region>"East, South and Southeast Asia"</dbpedia_region>
+		<dbpedia_region>Asia</dbpedia_region>
+		<dbpedia_region>Argao,_Cebu</dbpedia_region>
+		<dbpedia_region>Philippines</dbpedia_region>
+		<dbpedia_region>South_Asia</dbpedia_region>
+		<dbpedia_region>Southeast_Asia</dbpedia_region>
+		<dbpedia_region>Albay</dbpedia_region>
+		<dbpedia_region>Oceania</dbpedia_region>
+		<dbpedia_region>Asia</dbpedia_region>
+		<dbpedia_region>Ilocos</dbpedia_region>
+		<dbpedia_region>Mount_Arayat</dbpedia_region>
+		<dbpedia_region>Mount_Lantoy</dbpedia_region>
+		<dbpedia_region>Mount_Mayon</dbpedia_region>
+		<dbpedia_region>Pampanga</dbpedia_region>
+		
+		<dbpedia_regex>Korean</dbpedia_regex>
+		<dbpedia_regex>Asia</dbpedia_regex>
+		<dbpedia_regex>Vietnam</dbpedia_regex>
+		<dbpedia_regex>Indian</dbpedia_regex>
+		<dbpedia_regex>Southeast_Asian</dbpedia_regex>
+		<dbpedia_regex>Mongol</dbpedia_regex>
+		<dbpedia_regex>Australian</dbpedia_regex>
+		<dbpedia_regex>Hinduism</dbpedia_regex>
+		<dbpedia_regex>Hindu</dbpedia_regex>
+		<dbpedia_regex>Javanese</dbpedia_regex>
+		<dbpedia_regex>Indonesian</dbpedia_regex>
+		<dbpedia_regex>Māori</dbpedia_regex>
+		
+		<real_country id="AS">American Samoa</real_country>
+		<real_country id="AU">Australia</real_country>
+		<real_country id="BD">Bangladesh</real_country>
+		<real_country id="BN">Brunei Darussalam</real_country>
+		<real_country id="BT">Bhutan</real_country>
+		<real_country id="CC">Cocos (Keeling) Islands</real_country>
+		<real_country id="CK">Cook Islands</real_country>
+		<real_country id="CX">Christmas Island</real_country>
+		<real_country id="FJ">Fiji</real_country>
+		<real_country id="FM">Federated States of Micronesia</real_country>
+		<real_country id="GU">Guam</real_country>
+		<real_country id="ID">Indonesia</real_country>
+		<real_country id="IN">India</real_country>
+		<real_country id="IO">British Indian Ocean Territory</real_country>
+		<real_country id="KH">Cambodia</real_country>
+		<real_country id="KP">North Korea</real_country>
+		<real_country id="KR">South Korea</real_country>
+		<real_country id="LA">Lao People's Democratic Republic</real_country>
+		<real_country id="LK">Sri Lanka</real_country>
+		<real_country id="MM">Myanmar</real_country>
+		<real_country id="MN">Mongolia</real_country>
+		<real_country id="MV">Maldives</real_country>
+		<real_country id="MY">Malaysia</real_country>
+		<real_country id="NC">New Caledonia</real_country>
+		<real_country id="NF">Norfolk Island</real_country>
+		<real_country id="NP">Nepal</real_country>
+		<real_country id="NZ">New Zealand</real_country>
+		<real_country id="PG">Papua New Guinea</real_country>
+		<real_country id="PH">Philippines</real_country>
+		<real_country id="PW">Palau</real_country>
+		<real_country id="SB">Solomon Islands</real_country>
+		<real_country id="SG">Singapore</real_country>
+		<real_country id="TH">Thailand</real_country>
+		<real_country id="TL">Timor-Leste</real_country>
+		<real_country id="TO">Tonga</real_country>
+		<real_country id="VN">Vietnam</real_country>
+		<real_country id="VU">Vanuatu</real_country>
+		<real_country id="WF">Wallis and Futuna</real_country>
+		<real_country id="WS">Samoa</real_country>
+	</fantastic_region>
+		
+	<fantastic_region id="Japan">
+		<name>Japan</name>
+		<color>#f5bb00</color>
+	
+		<dbpedia_country>Japan</dbpedia_country>
+		
+		<dbpedia_region>Kagoshima</dbpedia_region>
+		<dbpedia_region>Kyushu_Island</dbpedia_region>
+		<dbpedia_region>Lake_Ikeda</dbpedia_region>
+		
+		<dbpedia_regex>Japanese</dbpedia_regex>
+		<dbpedia_regex>Yōkai</dbpedia_regex>
+		
+		<real_country id="JP">Japan</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="China">
+		<name>China</name>
+		<color>#e5625e</color>
+		
+		<dbpedia_regex>Chinese</dbpedia_regex>
+		<dbpedia_regex>Tibetan</dbpedia_regex>
+		
+		<real_country id="CN">China</real_country>
+		<real_country id="HK">Hong Kong</real_country>
+		<real_country id="MO">Macau</real_country>
+		<real_country id="TW">Taiwan</real_country>		
+	</fantastic_region>
+	
+	<fantastic_region id="North_America">
+		<name>North America</name>
+		<color>#1a1b25</color>
+	
+		<dbpedia_country>Canada</dbpedia_country>
+		<dbpedia_country>"Northwestern Europe, Scandinavia, British Isles, United States"</dbpedia_country>
+		<dbpedia_country>"United States"</dbpedia_country>
+		<dbpedia_country>United_States</dbpedia_country>
+		<dbpedia_country>Unites_States</dbpedia_country>
+		
+		<dbpedia_region>The_Americas</dbpedia_region>
+		<dbpedia_region>Illinois</dbpedia_region>
+		
+		<dbpedia_regex>Canadian</dbpedia_regex>
+		<dbpedia_regex>North_America</dbpedia_regex>
+		<dbpedia_regex>Canada</dbpedia_regex>
+		
+		<real_country id="CA">Canada</real_country>
+		<real_country id="PM">Saint Pierre and Miquelon</real_country>
+		<real_country id="US">United States</real_country>
+	</fantastic_region>
+	
+	<fantastic_region id="Latin_America">
+		<name>Latin America</name>
+		<color>#ff9b42</color>
+	
+		<dbpedia_country>Muisca_Confederation</dbpedia_country>
+		
+		<dbpedia_region>Altiplano_Cundiboyacense</dbpedia_region>
+		<dbpedia_region>Mesoamerica</dbpedia_region>
+		
+		<dbpedia_regex>American</dbpedia_regex>
+		<dbpedia_regex>Brazilian</dbpedia_regex>
+		<dbpedia_regex>Central_American</dbpedia_regex>
+		<dbpedia_regex>Latin_American</dbpedia_regex>
+		<dbpedia_regex>Mesoamerican</dbpedia_regex>
+		<dbpedia_regex>Mexican</dbpedia_regex>
+		<dbpedia_regex>Costa_Rican</dbpedia_regex>
+		<dbpedia_regex>Latin_American</dbpedia_regex>
+		<dbpedia_regex>Venezuelan</dbpedia_regex>
+		<dbpedia_regex>Trinidad_and_Tobago</dbpedia_regex>
+		<dbpedia_regex>Mapuche</dbpedia_regex>
+		<dbpedia_regex>Guatemala</dbpedia_regex>
+		<dbpedia_regex>Inca</dbpedia_regex>
+		<dbpedia_regex>Ecuador</dbpedia_regex>
+		<dbpedia_regex>Amazon</dbpedia_regex>
+		
+		<real_country id="AG">Antigua and Barbuda</real_country>
+		<real_country id="AI">Anguilla</real_country>
+		<real_country id="AR">Argentina</real_country>
+		<real_country id="AW">Aruba</real_country>
+		<real_country id="BB">Barbados</real_country>
+		<real_country id="BL">Saint Barthelemy</real_country>
+		<real_country id="BO">Bolivia</real_country>
+		<real_country id="BM">Bermuda</real_country>
+		<real_country id="BQ">Bonaire, Sint Eustatius and Saba</real_country>
+		<real_country id="BR">Brazil</real_country>
+		<real_country id="BS">Bahamas</real_country>
+		<real_country id="BZ">Belize</real_country>
+		<real_country id="CL">Chile</real_country>
+		<real_country id="CO">Colombia</real_country>
+		<real_country id="CR">Costa Rica</real_country>
+		<real_country id="CU">Cuba</real_country>
+		<real_country id="CV">Cape Verde</real_country>
+		<real_country id="CW">Curacao</real_country>
+		<real_country id="DM">Dominica</real_country>
+		<real_country id="DO">Dominican Republic</real_country>
+		<real_country id="EC">Ecuador</real_country>
+		<real_country id="FK">Falkland Islands</real_country>
+		<real_country id="GD">Grenada</real_country>
+		<real_country id="GF">French Guiana</real_country>
+		<real_country id="GP">Guadeloupe</real_country>
+		<real_country id="GS">South Georgia and South Sandwich Islands</real_country>
+		<real_country id="GT">Guatemala</real_country>
+		<real_country id="GY">Guyana</real_country>
+		<real_country id="HN">Honduras</real_country>
+		<real_country id="HT">Haiti</real_country>
+		<real_country id="JM">Jamaica</real_country>
+		<real_country id="KN">Saint Kitts and Nevis</real_country>
+		<real_country id="KY">Cayman Islands</real_country>
+		<real_country id="LC">Saint Lucia</real_country>
+		<real_country id="MF">Saint Martin</real_country>
+		<real_country id="MQ">Martinique</real_country>
+		<real_country id="MS">Montserrat</real_country>
+		<real_country id="MX">Mexico</real_country>
+		<real_country id="NI">Nicaragua</real_country>
+		<real_country id="PA">Panama</real_country>
+		<real_country id="PE">Peru</real_country>
+		<real_country id="PR">Puerto Rico</real_country>
+		<real_country id="PY">Paraguay</real_country>
+		<real_country id="SR">Suriname</real_country>
+		<real_country id="SV">El Salvador</real_country>
+		<real_country id="SX">Sint Maarten</real_country>
+		<real_country id="TC">Turks and Caicos Islands</real_country>
+		<real_country id="TT">Trinidad and Tobago</real_country>
+		<real_country id="UY">Uruguay</real_country>
+		<real_country id="VC">Saint Vincent and the Grenadines</real_country>
+		<real_country id="VE">Venezuela</real_country>
+		<real_country id="VG">British Virgin Islands</real_country>
+		<real_country id="VI">US Virgin Islands</real_country>
+	</fantastic_region>
+	
+</fantastic_regions>

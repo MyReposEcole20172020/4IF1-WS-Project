@@ -89,22 +89,42 @@ function colorSVG(svg, regionsXML){
         }
         
         for(var j=0;j<idCountries.length;j++) {
-            svg.getElementById(idCountries[j]).style.fill=color;
-            svg.getElementById(idCountries[j]).style.opacity="0.5";
+            svg.getElementById(idCountries[j]).style.fill="white";
+            svg.getElementById(idCountries[j]).style.opacity="1";
         }
     }
+}
+
+var svg;
+function setSVG(v){
+    svg = v;
+}
+function getSVG(){
+    return svg;
+}
+var regionsXML;
+function setRegionsXML(v){
+    regionsXML = v;
+}
+function getRegionsXML(){
+    return regionsXML;
 }
 
 function displaySVG(svgDocumentUrl,regionsXMLDocumentUrl,newElementName,elReplace){
     var svg = loadSVG(svgDocumentUrl,newElementName,elReplace);
     var regionsXML = chargerHttpXML(regionsXMLDocumentUrl);
+    setSVG(svg);
+    setRegionsXML(regionsXML);
     colorSVG(svg, regionsXML);
 }
+
+
+
 
 //-----------------------------------------------------------
 function clickEvent(){
 
-    var elementHtmlParent = window.document.getElementById(clickEvent.countryNameDisplay);
+    //var elementHtmlParent = window.document.getElementById(clickEvent.countryNameDisplay);
 
     var id = this.getAttribute("id");
 
@@ -112,7 +132,7 @@ function clickEvent(){
     var country = xml.getElementById(id);
     var regionName = country.parentElement.getElementsByTagName("name")[0].innerHTML;
 
-    elementHtmlParent.innerHTML = "Clicked on :</br>Country : " + this.getAttribute("title") + "</br>Region : " + regionName;
+    //elementHtmlParent.innerHTML = "Clicked on :</br>Country : " + this.getAttribute("title") + "</br>Region : " + regionName;
     
 }
 
@@ -135,18 +155,21 @@ function highLight(idRegion,svg){
     for(i=0;i<idCountries.length;i++){
 
         //svg.getElementById(idCountries[i]).style.fill="green";
-        svg.getElementById(idCountries[i]).style.opacity="1";
+        svg.getElementById(idCountries[i]).style.fill='red';
+        svg.getElementById(idCountries[i]).style.opacity="0.9";
     }
 }
 
 function lowLight(idRegion,svg){    
 
+    var color = getColorFromCountryId("fantastic_regions_countries.xml",idRegion);
     var idCountries = getRegionCountries("fantastic_regions_countries.xml",idRegion);
 
     for(i=0;i<idCountries.length;i++){
 
         //svg.getElementById(idCountries[i]).style.fill="lightgrey";
-        svg.getElementById(idCountries[i]).style.opacity="0.5";     
+        svg.getElementById(idCountries[i]).style.fill='white';
+        svg.getElementById(idCountries[i]).style.opacity="1";     
     }
 }
 
@@ -155,6 +178,13 @@ function getRegionFromCountryId(xmlDocumentUrl,id){
     var country = xml.getElementById(id);
     var idRegion = country.parentElement.getAttribute("id");
     return idRegion;
+}
+
+function getColorFromCountryId(xmlDocumentUrl,id){
+    var xml = chargerHttpXML(xmlDocumentUrl);
+    var country = xml.getElementById(id);
+    var color = country.parentElement.getElementsByTagName("color")[0].innerHTML;
+    return color;
 }
 
 function getRegionCountries(xmlDocumentUrl,idRegion){
@@ -169,8 +199,8 @@ function getRegionCountries(xmlDocumentUrl,idRegion){
 
 function MouseOverEvent(){
 
-    var elementHtmlParent = window.document.getElementById(MouseOverEvent.mouseOverDisplay);
-
+    /*var elementHtmlParent = window.document.getElementById(MouseOverEvent.mouseOverDisplay);*/
+    
     var id = this.getAttribute("id");
     var svg = this.ownerSVGElement;
 
@@ -186,8 +216,8 @@ function MouseOverEvent(){
     var country = xml.getElementById(id);
     var regionName = country.parentElement.getElementsByTagName("name")[0].innerHTML;
 
-    elementHtmlParent.innerHTML = "Region : " + regionName;
-    console.log(regionName);
+    /*elementHtmlParent.innerHTML = "Region : " + regionName;
+    console.log(regionName);*/
 
     MouseOverEvent.regionId = idRegion;
 

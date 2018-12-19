@@ -602,15 +602,36 @@ body {
 }
 
 .s01 form .inner-form .input-field.second-wrap {
-  width: 32.77%;
+  width: 10.77%;
   min-width: 180px;
+}
+
+.s01 form .inner-form .input-field.second-wrap .btn-map {
+  height: 100%;
+  width: 100%;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 10px;
+  display: inline-block;
+  background: #4272d7;
+  white-space: nowrap;
+  border-radius: .5px;
+  font-size: 18px;
+  color: #fff;
+  transition: all .2s ease-out, color .2s ease-out;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.s01 form .inner-form .input-field.second-wrap .btn-map:hover {
+  background: #2d62d3;
 }
 
 .s01 form .inner-form .input-field.third-wrap {
   width: 180px;
   margin-right: 0;
   min-width: 200px;
-  margin: 0px 0px 8px 0px;
+  margin: 0px 0px 0px 0px;
   display: inline-block;
 }
 

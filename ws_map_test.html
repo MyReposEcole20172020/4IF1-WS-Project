@@ -4,29 +4,35 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Test regions WS</title>
-    <meta name="author" content="PA">
+	<meta name="author" content="PA">
+	
+	<link href="css/map.css" rel="stylesheet" />
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
+    
 
 </head>
 
-<body> 
-    		
-		
-		<div id="map">
-			<p style="color: red; font-weight: bold;"></p>
+<body>
+	<div class="s01">
+		<form>	
+		<div class="inner-form">
+			<div class="result-field first-wrap">
+				<div id="map">
+					<p style="color: red; font-weight: bold;"></p>
+				</div>
+			</div>
 		</div>
-
+		</form>
+	</div>
+					
 		
-
-		
-
-    
-    
+	
+	<script type="text/javascript" src="scripts.js"></script>
     
 	<script>
+
 		$(document).ready(function () {
 		  displaySVG('worldHigh.svg','fantastic_regions_countries.xml','svg','map');
 		  //displayCountries();
@@ -37,7 +43,9 @@
 	</script>
 
 	<script>
+
 		$('#searchInput').on('keyup', enterPressed);
+
 		function enterPressed(event) {
             if (event.keyCode === 13) {
                 // Trigger the button element with a click
@@ -50,3 +58,5 @@
 </body>
 
 </html>
+
+
