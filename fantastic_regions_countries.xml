@@ -540,6 +540,8 @@
 		<dbpedia_regex>Ecuador</dbpedia_regex>
 		<dbpedia_regex>Amazon</dbpedia_regex>
 		
+		
+		
 		<real_country id="AG">Antigua and Barbuda</real_country>
 		<real_country id="AI">Anguilla</real_country>
 		<real_country id="AR">Argentina</real_country>

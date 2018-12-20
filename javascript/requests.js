@@ -592,9 +592,8 @@ function insertLinkWikipedia(subject) {
             $('#wikipedia').remove();
             //$('#similarCreatures').append('<span>Similar creatures not found</span>');
         } else {
-            $(resultats.results.bindings).each(function (i) {
-                var result = resultats.results.bindings[i].out.value;
-                alert(result);
+            //$(resultats.results.bindings).each(function (i) {
+                var result = resultats.results.bindings[0].out.value;
                 var label = result.substring(result.lastIndexOf('/') + 1);
                 if(label.indexOf('(') != -1) {
                     label = label.substring(0,label.indexOf('('));
@@ -603,12 +602,11 @@ function insertLinkWikipedia(subject) {
                     label = label.substring(0,label.lastIndexOf('_'));
                   }
                 label = label.replace(/_/g, ' ');
-                alert(label);
                 /*var myUrl =parent.document.URL.substring(0,parent.document.URL.lastIndexOf('=')+1); 
                 result = myUrl + label;*/
                 $("#wikipedia").attr('href', result);
                 $("#wikipedia").append(' ' + label + '<br />');                
-            });
+            //});
         }
 
     });
