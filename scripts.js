@@ -136,8 +136,8 @@ function highLight(idRegion,svg){
     for(i=0;i<idCountries.length;i++){
 
         //svg.getElementById(idCountries[i]).style.fill="green";
-        svg.getElementById(idCountries[i]).style.fill='orangered';
-        svg.getElementById(idCountries[i]).style.opacity="0.6";
+        svg.getElementById(idCountries[i]).style.fill='rgb(221, 94, 104)';
+        svg.getElementById(idCountries[i]).style.opacity="0.8";
     }
 }
 
