@@ -75,12 +75,9 @@ function insertListCreatures() {
                 });
             
 
-            } else if (dbpRegions[i].innerHTML.charAt(0) == '"'){
-                query = 'UNION  { ?out dbp:country ' + dbpRegions[i].innerHTML +'^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.';
-                alert(query);
+            } else if (dbpCountries[i].innerHTML.charAt(0) == '"'){
+                query = 'UNION  { ?out dbp:country ' + dbpCountries[i].innerHTML +'^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString>.';
                 query = addConstraints(query);
-                alert(dbpRegions[i].innerHTML.substring(1,dbpRegions[i].innerHTML.length - 1));
-
                 query = 'select distinct ?out where {' + query.substring(6,query.length) + '}';
                 console.log("\n\n\n" + query + "\n\n\n");
                 query = encodeURIComponent(query);
